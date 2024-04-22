@@ -148,72 +148,71 @@ main {
 .support{
   padding: 40px 0;
 }
-/* General Styles for Products Section */
+css cho sản phẩm
 .products {
-  width: 80%; /* Adjust width as needed */
-  margin: 0 auto; /* Center the section */
-  font-family: Arial, sans-serif; /* Choose your preferred font */
+  width: 80%;
+  margin: 0 auto; 
+  font-family: Arial, sans-serif; 
 }
 
-/* Title Container Styling */
+
 .title-container {
   text-align: center;
   margin-bottom: 20px;
 }
 
 h2 {
-  color: #333; /* Adjust title color */
-  font-size: 24px; /* Adjust title size */
+  color: #333;
+  font-size: 24px;
 }
 
-/* Product List Container */
+
 .product-list {
-  display: flex; /* Arrange products in a row */
-  flex-wrap: wrap; /* Allow products to wrap to multiple lines */
-  justify-content: space-between; /* Distribute products evenly */
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
 }
 
-/* Individual Product Styling */
+
 .product {
-  width: 250px; /* Adjust product width as needed */
+  width: 250px; 
   margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  transition: box-shadow 0.3s ease; /* Smooth hover effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s ease;
 }
 
 .product:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Image Styling */
+
 .product img {
-  width: 100%; /* Make image responsive */
-  height: 200px; /* Adjust image height as needed */
-  object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
 }
 
-/* Product Info Container */
+
 .product-info {
   text-align: center;
   padding: 10px;
 }
 
-/* Product Name (h3) Styling */
+
 .product-info h3 {
-  margin-top: 10px; /* Add spacing above product name */
-  font-size: 18px; /* Adjust product name font size */
-  color: #333; /* Adjust product name color */
+  margin-top: 10px; 
+  font-size: 18px; 
+  color: #333;
 }
 
-/* Price Styling */
+
 .price {
-  font-size: 18px; /* Adjust price font size */
-  color: #333; /* Adjust price color */
-  margin-top: 10px; /* Add spacing above price */
+  font-size: 18px; 
+  color: #333; 
+  margin-top: 10px; 
 }
 
-/* .product-info .price { */
-  /* Các thuộc tính chung cho footer */
+
 .footer {
   background-color: #f0f0f0;
   padding: 20px 0;
