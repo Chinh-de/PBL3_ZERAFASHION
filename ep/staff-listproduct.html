@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="staff-listproduct.css">
+    <link rel="stylesheet" href="css\header.css">
+    <link rel="stylesheet" href="css\footer.css">
+
+</head>
+<body>
+    <div id="staff-listproduct">
+        <div class="container">
+          <h1 class="heading">Tìm kiếm sản phẩm</h1>
+          <form action="#">
+            <div class="search-wrapper">
+              <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm sản phẩm..." id="search-input" aria-label="Search products">
+              </div>
+              <div class="filter-options">
+                <label for="product-type">Loại sản phẩm:</label>
+                <select id="product-type" aria-label="Filter by product type">
+                  <option value="">Tất cả</option>
+                  <option value="dien-thoai">Điện thoại</option>
+                  <option value="may-tinh">Máy tính</option>
+                  <option value="tivi">Tivi</option>
+                </select>
+                <label for="brand">Nhãn hiệu:</label>
+                <select id="brand" aria-label="Filter by brand">
+                  <option value="">Tất cả</option>
+                  <option value="samsung">Samsung</option>
+                  <option value="apple">Apple</option>
+                  <option value="oppo">Oppo</option>
+                </select>
+              </div>
+              <button type="submit">Tìm kiếm</button>
+            </div>
+          </form>
+      
+          <div id="search-results">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Tên sản phẩm</th>
+                  <th>Ảnh</th>
+                  <th>Nhãn hiệu</th>
+                  <th>Số lượng</th>
+                  <th>Giá thành</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tên sản phẩm 1</td>
+                  <td><img src="image1.jpg" alt="Product 1"></td>
+                  <td>Nhãn hiệu 1</td>
+                  <td>10</td>
+                  <td>1.000.000</td>
+                </tr>
+                <tr>
+                  <td>Tên sản phẩm 2</td>
+                  <td><img src="image2.jpg" alt="Product 2"></td>
+                  <td>Nhãn hiệu 2</td>
+                  <td>5</td>
+                  <td>2.000.000</td>
+                </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+      
+</body>
+</html>
