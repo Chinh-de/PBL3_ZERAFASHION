@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class = "web">
+        <header class = "header">
+            <section class = "header__logo">
+                <div class="header__logo-ads" id="ads">
+                    <span class="ad-text">Miễn phí vận chuyển cho đơn hàng từ 800.000đ</span>
+                    <span class="ad-text">Giao hàng nội thành trong ngày</span>
+                    <span class="ad-text">Đổi trả trong 7 ngày</span>
+                </div>
+                <script src="js/main.js"></script>  <!-- thay đổi quảng cáo mỗi 3s -->
+                
+                <div class="header__logo-img">
+                    <a href="index.html"><img id="logo" src="./image/logo.jpg" alt="Logo"></a>
+                </div class>
+
+                <div class="header__logo-mininav">
+                    <ul class="header__logo-mininavlist">
+                        <li class="header__logo-mininavitem"><input type="text" id="searchInput" name="searchInput" placeholder="Nhập từ khóa tìm kiếm..."></li>
+                        <li class="header__logo-mininavitem"><button class="header__logo--icon" type="submit" onclick="searchFunction()"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+                        <li class="header__logo-mininavitem"><button class="header__logo--icon" onclick="personalFunction()"><i class="fa-solid fa-circle-user"></i></button></li>
+                        <li class="header__logo-mininavitem"><button class="header__logo--icon" onclick="cartFunction()"><i class="fa-solid fa-bag-shopping"></i></i></button></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- end header__logo-->
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <h3>
+                      <li class="header__navbar-item"> <a href="index.html" id="a1">SẢN PHẨM</a></li>
+                      <li class="header__navbar-item"> <a href="index.html" id="a1">ÁO NAM</a></li>
+                      <li class="header__navbar-item"> <a href="index.html" id="a1">QUẦN NAM</a></li>
+                      <li class="header__navbar-item"> <a href="index.html" id="a1">GIÀY NAM</a></li>
+                      <li class="header__navbar-item"> <a href="index.html" id="a1">ĐỒ THỂ THAO</a></li>
+                      <li class="header__navbar-item"> <a href="index.html" id="a1">VỀ CHÚNG TÔI</a></li>
+                    </h3>
+                </ul>
+            </nav>
+            <!-- end header__navbar -->
+        </header>
+        <!-- end header -->
+
+        <div class = "buy-content">
+            <section class = "buy-content__payment">
+                <h2>Thông tin giao hàng</h2>
+                <div>
+                    <label for="inputNameCus">Họ và Tên:</label>
+                <input type="text" id="inputNameCus" name="inputNameCus" placeholder="Tên khách hàng..." required>
+                </div>
+                <div>
+                    <label for="inputEmailCus">Email:</label>
+                <input type="email" id="inputEmailCus" name="inputEmailCus" placeholder="Email..." required>
+                </div>
+                <div>
+                    <label for="inputTelCus">Số điện thoại:</label>
+                <input type="tel" id="inputTelCus" name="inputTelCus" placeholder="Số điện thoại..." required>
+                </div>
+                <div>
+                    <label for="inputAddressDetailCus">Địa chỉ cụ thể:</label>
+                    <input type="text" id="inputAddressDetailCus" name="inputAddressDetailCus" placeholder="Địa chỉ..." required>
+                </div>
+                <div>
+                    <label for="PaymentMethod">Phương thức thanh toán</label>
+                    <select name="PaymentMethod" id="PaymentMethod">
+                        <option value="ondelivery">Thanh toán khi nhận hàng</option>
+                        <option value="credit">Thanh toán qua thẻ tín dụng</option>
+                    </select>
+                </div>
+                <div>
+                    <a href="order.html">Giỏ hàng</a>
+                    <button type="submit">Hoàn tất đơn hàng</button>
+                </div>
+            </section>
+            <!-- end buy-content__payment -->
+            <section class= "buy-content__order">
+                <div class="buy-content__order-san-pham">
+                    <div class="buy-content__order-hinh-anh">
+                        <img src="image\product.jpg" alt="Hình ảnh sản phẩm">
+                    </div>
+                    <div class="buy-content__order-thong-tin">
+                        <h2>Tên sản phẩm</h2>
+                        <p class="buy-content__order-gia">500,000₫</p>
+                        <p class="buy-content__order-thuong-hieu">Thương hiệu</p>
+                        <a href="#" class="buy-content__order-chi-tiet">Chi tiết</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Tạm tính</p>
+                    <p>500000đ</p>
+                </div>
+                <div>
+                    <p>Phí vận chuyển</p>
+                    <p>0đ</p>
+                </div>
+                <div>
+                    <p>Tổng cộng</p>
+                    <p>500000đ</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
