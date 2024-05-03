@@ -111,12 +111,7 @@ body {
     padding: 0;
 }
 /* Basic Styles */
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
+ /* CSS staff-listproduct */
   #staff-listproduct .container {
     width: 80%;
     margin: 0 auto;
@@ -251,6 +246,10 @@ body {
 
 
 
+
+
+
+/* staff-listcustomers */
   
 #staff-listcustomers .container {
     width: 80%;
@@ -354,6 +353,11 @@ body {
 
 
 
+
+
+
+
+/* staff-addproduct */
   
 #staff-addproduct {
     width: 400px;
@@ -399,6 +403,10 @@ body {
 }
 
 
+
+
+
+/* signup */
 
 #signup {
     width: 400px;
@@ -454,9 +462,12 @@ input[type="date"] {
 
 
 
-/* ... (CSS chung cho body, header, footer, v.v.) */
 
-/* Main */
+
+
+
+/* order */
+
 #order {
     display: flex;
     flex-direction: column;
@@ -563,6 +574,8 @@ input[type="date"] {
 
 
 
+/* main */
+
 #main {
     display: flex;
     flex-direction: column;
@@ -579,9 +592,6 @@ input[type="date"] {
       padding: 20px;
     }
   
-  
-   
-  /* style.css */
   
   /* Banner */
   #main .banner {
@@ -682,7 +692,11 @@ input[type="date"] {
 
   
 
-  
+
+
+
+/* login */
+
 #login {
     width: 400px;
     margin: 0 auto;
@@ -725,8 +739,6 @@ input[type="password"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
-    
 }
 
 #login button:hover {
@@ -743,6 +755,8 @@ input[type="password"] {
 
 
 
+
+/* inforproduct */
 
 #inforproduct {
     padding: 20px;
@@ -912,6 +926,10 @@ input[type="password"] {
 
 
 
+
+
+/* forgotpassword */
+
   #forgotpassword {
     width: 400px;
     margin: 0 auto;
@@ -919,7 +937,6 @@ input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 
 #forgotpassword h1 {
     text-align: center;
@@ -967,6 +984,9 @@ input[type="date"] {
 
 
 
+
+
+/* detailproduct */
 
 #detailproduct {
     width: 80%;
@@ -1083,6 +1103,9 @@ input[type="date"] {
 
 
 
+
+/* admin-thongke */
+
   #admin-thongke {
     width: 80%;
     margin: 0 auto;
@@ -1157,80 +1180,12 @@ input[type="date"] {
 
 
 
-#admin-thongke {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-#admin-thongke h1 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-#admin-thongke .thong-ke-tong, .thong-ke-theo-thoi-gian, .thong-ke-theo-san-pham {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-#admin-thongke .thong-ke-tong h2, .thong-ke-theo-thoi-gian h2, .thong-ke-theo-san-pham h2 {
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-#admin-thongke .thong-tin {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-#admin-thongke #chon-thoi-gian {
-    width: 200px;
-    margin-bottom: 15px;
-}
-
-/* Style cho bảng thống kê theo sản phẩm */
-#admin-thongke #bang-thong-ke {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-#admin-thongke #bang-thong-ke th, #bang-thong-ke td {
-    border: 1px solid #ccc;
-    padding: 5px;
-    text-align: left;
-}
-
-#admin-thongke #bang-thong-ke th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-}
-
-/* Style cho biểu đồ theo thời gian (có thể sử dụng thư viện Chart.js hoặc thư viện vẽ biểu đồ khác) */
-#admin-thongke #bieu-do-theo-thoi-gian {
-    width: 600px;
-    height: 400px;
-}
-
-/* Style cho các phần tử khác */
-#admin-thongke .button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-#admin-thongke .button:hover {
-    background-color: #45a049;
-}
 
 
 
 
 
+/* admin-editinforcustomers */
 
 #admin-editinforcustomers {
     width: 500px;
@@ -1289,6 +1244,10 @@ textarea {
 
 
 
+
+
+
+/* admin-accountmanagement */
 
   #admin-accountmanagement .container {
     width: 80%;
