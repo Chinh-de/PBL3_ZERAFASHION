@@ -27,7 +27,14 @@
                     <ul class="header__logo-mininavlist">
                         <li class="header__logo-mininavitem"><input type="text" id="searchInput" name="searchInput" placeholder="Nhập từ khóa tìm kiếm..."></li>
                         <li class="header__logo-mininavitem"><button class="header__logo--icon" type="submit" onclick="searchFunction()"><i class="fa-solid fa-magnifying-glass"></i></button></li>
-                        <li class="header__logo-mininavitem"><button class="header__logo--icon" onclick="personalFunction()"><i class="fa-solid fa-circle-user"></i></button></li>
+                        <li class="header__logo-mininavitem" id = "dropdown-user">
+                            <button class="header__logo--icon" id = "dropdown-btn"><i class="fa-solid fa-circle-user"></i></button>
+                            <div class="dropdown-user-content">
+                                <a href="#">Thông tin cá nhân</a>
+                                <a href="#">Lịch sử mua hàng</a>
+                                <a href="#">Đăng xuất</a>
+                            </div>
+                        </li>
                         <li class="header__logo-mininavitem"><button class="header__logo--icon" onclick="cartFunction()"><i class="fa-solid fa-bag-shopping"></i></i></button></li>
                     </ul>
                 </div>
@@ -45,6 +52,7 @@
                     </h3>
                 </ul>
             </nav>
+
             <!-- end header__navbar -->
         </header>
         <!-- end header -->
