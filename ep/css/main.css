@@ -1,3 +1,110 @@
+/* header.css */
+.header{
+  width: 100%;
+  height: 150px;
+  display: flex; /* Đặt header thành flexbox */
+  flex-direction: column; /* Các yếu tố xếp theo chiều dọc */
+}
+/* headerlogo */
+.header__logo {
+  background-color: #F7F8FA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.header__logo-ads {
+  display: flex;
+  margin-left: 60px;
+  margin-right: auto;
+  }
+  .ad-text {
+      display: none; /* Ẩn tất cả các quảng cáo ban đầu */
+      margin-right: 20px; /* Khoảng cách giữa các quảng cáo */
+      width: 400px;
+  }
+
+
+.header__logo-img{
+  position: absolute;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(-50%);
+}
+  #logo{
+      float: center;
+      width: auto;
+      height: 90px;
+  }
+
+
+.header__logo-mininav{
+  margin-left: auto;
+  margin-right: 60px;
+}
+  .header__logo-mininavlist {
+      float: right;
+      margin-bottom: 20px;
+      display: flex;
+      list-style: none; 
+  }
+      
+      #searchInput{
+          font-size: 25px;
+          border-radius: 20px;
+          margin-right: 10px;
+      }
+
+      .header__logo--icon{
+          font-size: 25px;
+          margin-right: 10px;
+          border-radius: 100%;
+      }
+/* end header logo */
+
+
+.header__navbar{
+  background-color: #506CA6;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  padding: 10px 20px;
+  
+}
+.header__navbar-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+.header__navbar-item{
+  display: inline-block;
+  margin-right: 20px;
+}
+.header__navbar-item a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.header__navbar-item:hover ul {
+  display: block;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #fff;
+  padding: 10px;
+  z-index: 1;
+}
+
+/* end header.css */
+
 body {
     font-family: sans-serif;
     margin: 0;
