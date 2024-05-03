@@ -1,258 +1,1303 @@
-/* header.css */
-
-.header{
-  width: 100%;
-  height: 150px;
-  display: flex; /* Đặt header thành flexbox */
-  flex-direction: column; /* Các yếu tố xếp theo chiều dọc */
-}
-/* headerlogo */
-.header__logo {
-  background-color: #F7F8FA;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100px;
-}
-
-.header__logo-ads {
-  display: flex;
-  margin-left: 60px;
-  margin-right: auto;
-  }
-  .ad-text {
-      display: none; /* Ẩn tất cả các quảng cáo ban đầu */
-      margin-right: 20px; /* Khoảng cách giữa các quảng cáo */
-      width: 400px;
-  }
-.header__logo-img{
-  position: absolute;
-  left: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateX(-50%);
-}
-  #logo{
-      float: center;
-      width: auto;
-      height: 90px;
-  }
-.header__logo-mininav{
-  margin-left: auto;
-  margin-right: 60px;
-}
-  .header__logo-mininavlist {
-      float: right;
-      margin-bottom: 20px;
-      display: flex;
-      list-style: none; 
-  }
-      
-      #searchInput{
-          font-size: 25px;
-          border-radius: 20px;
-          margin-right: 10px;
-      }
-
-      .header__logo--icon{
-          font-size: 25px;
-          margin-right: 10px;
-          border-radius: 100%;
-      }
-/* end header logo */
-.header__navbar{
-  background-color: #506CA6;
-  height: 50px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; 
-  padding: 10px 20px;
-}
-.header__navbar-list{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  margin: 0 auto; 
-}
-.header__navbar-item{
-  display: inline-block;
-  margin-right: 20px;
-}
-.header__navbar-item a{
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-.header__navbar-item:hover ul {
-  display: block;
-  position: absolute;
-  left: 100%;
-  top: 0;
-  background-color: #fff;
-  padding: 10px;
-  z-index: 1;
-}
-
-
-
-
-
-
-/* main.css */
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+}
+/* Basic Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
   }
   
-  .container {
-    max-width: 1000px;
+  #staff-listproduct .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Heading */
+  #staff-listproduct .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px; /* Adjust as desired */
+  }
+  
+  /* Search Wrapper */
+  #staff-listproduct .search-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Search Box */
+  #staff-listproduct .search-box {
+    flex: 1;
+    display: flex;
+  }
+  
+  #staff-listproduct #search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #staff-listproduct #search-input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Filter Options */
+  #staff-listproduct .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+  }
+  
+  #staff-listproduct .filter-options label {
+    margin-right: 10px;
+    width: 100px; /* Adjust width as needed */
+  }
+  
+  #staff-listproduct select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px; /* Adjust width as needed */
+  }
+  
+  /* Button */
+  #staff-listproduct button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Optional */
+  }
+  
+  #staff-listproduct button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Search Results */
+  #staff-listproduct #search-results {
+    margin-top: 30px;
+  }
+  
+  #staff-listproduct table.table {
+    width: 1000px; /* Adjust the width in pixels as needed */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    height: 500px; /* Set the table height */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+  }
+  
+  #staff-listproduct th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  #staff-listproduct th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Product Row Styling */
+  #staff-listproduct .product-row {
+    display: flex; /* Enable flexbox for product row */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Add spacing between rows */
+  }
+  
+  /* Product Image */
+  #staff-listproduct .product-image {
+    width: 80px; /* Adjust image width as needed */
+    height: 80px; /* Adjust image height as needed */
+    margin-right: 10px; /* Add margin between image and text */
+  }
+  
+  #staff-listproduct .product-image img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ccc; /* Add border if desired */
+  }
+  
+  /* Product Details */
+  #staff-listproduct .product-details {
+    flex: 1; /* Allow details to expand */
+  }
+
+
+
+
+
+  
+#staff-listcustomers .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Heading */
+  #staff-listcustomers .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px; /* Adjust as desired */
+  }
+  
+  /* Search Wrapper */
+  #staff-listcustomers .search-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Search Box */
+  #staff-listcustomers .search-box {
+    flex: 1;
+    display: flex;
+  }
+  
+  #staff-listcustomers #search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #staff-listcustomers #search-input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  
+  
+  /* Button */
+  #staff-listcustomers button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Optional */
+  }
+  
+  #staff-listcustomers button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Search Results */
+  #staff-listcustomers #search-results {
+    margin-top: 30px;
+  }
+  
+  #staff-listcustomers table.table {
+    width: 1000px; /* Adjust the width in pixels as needed */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    height: 500px; /* Set the table height */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+  }
+  
+  #staff-listcustomers th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  #staff-listcustomers th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Product Row Styling */
+  #staff-listcustomers .product-row {
+    display: flex; /* Enable flexbox for product row */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Add spacing between rows */
+  }
+  
+  
+  /* Product Details */
+  #staff-listcustomers .product-details {
+    flex: 1; /* Allow details to expand */
+  }
+
+
+
+  
+#staff-addproduct {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#staff-addproduct h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#staff-addproduct form {
+    display: flex;
+    flex-direction: column;
+}
+
+#staff-addproduct .form-group {
+    margin-bottom: 15px;
+}
+
+#staff-addproduct label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#staff-addproduct input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#staff-addproduct button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+#signup {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#signup h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#signup .form-group {
+    margin-bottom: 15px;
+}
+#signup .form-group-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#signup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#signup input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#signup button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#signup button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/* ... (CSS chung cho body, header, footer, v.v.) */
+
+/* Main */
+#order {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 333px); /* Chiều rộng 1/3 màn hình */
+    margin: 0 333px; /* Khoảng cách 2 bên */
+}
+
+/* Wrapper sản phẩm */
+#order .wrapper-san-pham {
+    flex: 2;
+}
+
+/* Wrapper thanh toán */
+#order .wrapper-thanh-toan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Sản phẩm */
+#order .san-pham {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+#order .hinh-anh {
+    width: 150px; /* Chiều rộng cố định */
+    height: auto; /* Chiều cao tự động */
+    margin: 0;
+}
+
+#order .hinh-anh img {
+    width: 100%;
+    height: auto;
+}
+
+#order .thong-tin {
+    display: flex;
+    flex-direction: column;
+    margin: 20;
+    padding: 30px;
+}
+
+#order .thong-tin h2 {
+    margin: 0;
+}
+
+#order .thong-tin p {
+    margin-bottom: 5px;
+}
+
+#order .gia {
+    font-weight: bold;
+    color: red;
+}
+
+#order .chi-tiet {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Tổng tiền */
+#order .tong-tien {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#order .tong-tien p {
+    margin: 0;
+}
+
+#order .tong-tien .gia {
+    font-weight: bold;
+    color: red;
+}
+
+/* Nút bấm */
+#order .nut-bam {
+    display: flex;
+    justify-content: space-between;
+}
+
+#order .thanh-toan {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#order .tiep-tuc {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 20px;
   }
-
-
-/* Menu responsive */
-
-@media (max-width: 768px) {
-  nav ul {
-      flex-direction: column;
-      text-align: center;
-      margin-bottom: 20px;
+  
+  #main .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  
+  
+   
+  /* style.css */
+  
+  /* Banner */
+  #main .banner {
+    background-color: #eee;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  #main .banner-text {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  #main .banner-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  #main .banner-text p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  #main .banner-text button[type="button"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+  }
+  #main .support{
+    padding: 40px 0;
+  }
+  /* General Styles for Products Section */
+  #main .products {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the section */
+    font-family: Arial, sans-serif; /* Choose your preferred font */
+  }
+  
+  /* Title Container Styling */
+  #main .title-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #main h2 {
+    color: #333; /* Adjust title color */
+    font-size: 24px; /* Adjust title size */
+  }
+  
+  /* Product List Container */
+  #main .product-list {
+    display: flex; /* Arrange products in a row */
+    flex-wrap: wrap; /* Allow products to wrap to multiple lines */
+    justify-content: space-between; /* Distribute products evenly */
+  }
+  
+  /* Individual Product Styling */
+  #main .product {
+    width: 250px; /* Adjust product width as needed */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+  
+  #main .product:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  /* Image Styling */
+  #main .product img {
+    width: 100%; /* Make image responsive */
+    height: 200px; /* Adjust image height as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+  }
+  
+  /* Product Info Container */
+  #main .product-info {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Product Name (h3) Styling */
+  #main .product-info h3 {
+    margin-top: 10px; /* Add spacing above product name */
+    font-size: 18px; /* Adjust product name font size */
+    color: #333; /* Adjust product name color */
+  }
+  
+  /* Price Styling */
+  #main .price {
+    font-size: 18px; /* Adjust price font size */
+    color: #333; /* Adjust price color */
+    margin-top: 10px; /* Add spacing above price */
   }
 
-  nav li {
-      margin-bottom: 10px;
+  
+
+  
+#login {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login .form-group {
+    margin-bottom: 15px;
+}
+#login .form-group-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#login input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+}
+
+#login button:hover {
+    background-color: #0056b3;
+}
+
+#login a {
+    color: #007bff;
+    text-decoration: none;
+    float: right;
+}
+
+
+
+
+
+
+#inforproduct {
+    padding: 20px;
+    display: flex;
+}
+
+/* #inforproduct .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  } */
+
+#inforproduct .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Tiếp tục từ phần trước */
+
+#inforproduct .bo-loc {
+    width: 25%; /* Maintain the desired width for the filter bar */
+    background-color: #eee;
+    padding: 50px;
+    margin: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    align-self: flex-start; /* Align the filter bar to the top */
   }
-}
-
-/* Menu dropdown */
-
- 
-/* style.css */
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Banner */
-.banner {
-  background-color: #eee;
-  padding: 40px 0;
-  text-align: center;
-}
-
-.banner-text {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.banner-text h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.banner-text p {
-  font-size: 18px;
-  color: #666;
-}
-
-.banner-text button[type="button"] {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
-}
-.support{
-  padding: 40px 0;
-}
-/* General Styles for Products Section */
-.products {
-  width: 80%; /* Adjust width as needed */
-  margin: 0 auto; /* Center the section */
-  font-family: Arial, sans-serif; /* Choose your preferred font */
-}
-
-/* Title Container Styling */
-.title-container {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-h2 {
-  color: #333; /* Adjust title color */
-  font-size: 24px; /* Adjust title size */
-}
-
-/* Product List Container */
-.product-list {
-  display: flex; /* Arrange products in a row */
-  flex-wrap: wrap; /* Allow products to wrap to multiple lines */
-  justify-content: space-between; /* Distribute products evenly */
-}
-
-/* Individual Product Styling */
-.product {
-  width: 250px; /* Adjust product width as needed */
-  margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  transition: box-shadow 0.3s ease; /* Smooth hover effect */
-}
-
-.product:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
-}
-
-/* Image Styling */
-.product img {
-  width: 100%; /* Make image responsive */
-  height: 200px; /* Adjust image height as needed */
-  object-fit: cover; /* Maintain aspect ratio and cover the entire area */
-}
-
-/* Product Info Container */
-.product-info {
-  text-align: center;
-  padding: 10px;
-}
-
-/* Product Name (h3) Styling */
-.product-info h3 {
-  margin-top: 10px; /* Add spacing above product name */
-  font-size: 18px; /* Adjust product name font size */
-  color: #333; /* Adjust product name color */
-}
-
-/* Price Styling */
-.price {
-  font-size: 18px; /* Adjust price font size */
-  color: #333; /* Adjust price color */
-  margin-top: 10px; /* Add spacing above price */
-}
-
-/* .product-info .price { */
-  /* Các thuộc tính chung cho footer */
-
-/* Responsive footer */
-@media (max-width: 768px) {
-  .container {
-      flex-direction: column;
-      align-items: flex-start;
+  
+#inforproduct .bo-loc h2 {
+    margin-bottom: 15px; /* Adds space below the heading */
+  }
+  
+#inforproduct .bo-loc ul {
+    list-style: none; /* Removes default bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+  }
+  
+#inforproduct .bo-loc li {
+    margin-bottom: 10px; /* Adds space between list items */
+  }
+  
+#inforproduct .bo-loc a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Sets link color */
+  }
+  
+#inforproduct .bo-loc a:hover {
+    color: #000; /* Changes link color on hover */
+  }
+  
+#inforproduct .bo-loc .loai-san-pham {
+    padding-left: 15px; /* Indents nested list */
+  }
+  
+#inforproduct .bo-loc .kich-thuoc {
+    margin-top: 15px; /* Adds space above size selection */
+  }
+  
+#inforproduct .bo-loc .kich-thuoc label {
+    display: block; /* Makes label display on a new line */
+    margin-bottom: 5px; /* Adds space below label */
   }
 
-  .footer-right {
-      margin-top: 10px;
-  }
+#inforproduct .loai-san-pham {
+    list-style: none; /* Ẩn dấu chấm mặc định của danh sách */
+    margin: 0; /* Xóa khoảng cách mặc định giữa các mục danh sách */
+    padding: 0; /* Xóa khoảng đệm mặc định giữa các mục danh sách */
+  
+    padding: 10px; /* Thêm khoảng đệm bên trong danh sách */
 }
+
+#inforproduct .loai-san-pham a {
+    text-decoration: none; /* Xóa đường gạch chân mặc định của liên kết */
+    color: black; /* Màu chữ đen */
+    padding: 10px 15px; /* Thêm khoảng đệm cho liên kết */
+    display: block; /* Hiển thị liên kết như một khối */
+    width: 100%; /* Chiều rộng 100% cho liên kết */
+    text-align: left; /* Căn chỉnh chữ sang trái */
+}
+
+#inforproduct .loai-san-pham a:hover {
+    background-color: #ddd; /* Nền xám khi di chuột qua liên kết */
+}
+
+
+#inforproduct .bo-loc a {
+    text-decoration: none;
+    color: black;
+}
+
+#inforproduct .danh-muc {
+    margin: 20px 0; /* Thêm khoảng cách trên và dưới danh mục */
+}
+
+#inforproduct .danh-muc-san-pham {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các sản phẩm tự động chuyển sang dòng mới */
+    justify-content: space-between; /* Sắp xếp sản phẩm cách đều nhau */
+    align-items: flex-start; /* Căn chỉnh sản phẩm theo cạnh trên */
+}
+
+#inforproduct .san-pham {
+    width: calc(25% - 20px); /* Chiều rộng tính toán cho mỗi sản phẩm */
+    margin: 10px; /* Khoảng cách giữa các sản phẩm */
+    text-align: center; /* Căn chỉnh nội dung sản phẩm ở giữa */
+    border: 1px solid #ccc; /* Thêm đường viền cho sản phẩm */
+    padding: 15px; /* Thêm khoảng đệm cho sản phẩm */
+    border-radius: 5px; /* Bẻ tròn góc sản phẩm */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+    cursor: pointer; /* Thay đổi con trỏ chuột thành dạng con trỏ tay */
+}
+
+#inforproduct .san-pham:hover {
+    background-color: #f5f5f5; /* Nền xám nhạt khi di chuột qua sản phẩm */
+}
+
+#inforproduct .san-pham img {
+    width: 100%; /* Chiều rộng hình ảnh 100% */
+    height: auto; /* Chiều cao tự động */
+    margin-bottom: 15px; /* Khoảng cách giữa hình ảnh và tiêu đề */
+}
+
+#inforproduct .san-pham h3 {
+    margin-bottom: 5px; /* Khoảng cách giữa tiêu đề và giá */
+}
+
+#inforproduct .san-pham p {
+    color: #777; /* Màu xám nhạt cho giá sản phẩm */
+}
+
+#inforproduct .kich-thuoc {
+    margin-top: 10px;
+}
+
+#inforproduct .kich-thuoc label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#inforproduct .kich-thuoc select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#inforproduct button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Optional */
+    margin: 20px;
+  }
+  
+#inforproduct button:hover {
+    background-color: #0056b3;
+  }
+
+
+
+
+  #forgotpassword {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#forgotpassword h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#forgotpassword .form-group {
+    margin-bottom: 15px;
+}
+#forgotpassword .form-group-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#forgotpassword label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#forgotpassword input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#forgotpassword button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#forgotpassword button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+#detailproduct {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Chia main thành ba cột, mỗi cột có kích thước bằng 1 phần */
+    gap: 20px;
+}
+
+  
+#detailproduct .product-info img {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+}
+
+#detailproduct .product-info {
+    display: flex;
+    flex-direction: column; /* Xếp các phần tử trong product-info theo chiều dọc */
+    align-items: flex-start; /* Canh trái các phần tử trong product-info */
+    gap: 10px;
+}
+
+#detailproduct .product-info h2 {
+    margin: 10px 0;
+}
+
+#detailproduct .product-info p {
+    margin: 5px 0;
+}
+
+#detailproduct .product-options {
+    display: flex;
+    flex-direction: column; /* Xếp các phần tử trong product-options theo chiều dọc */
+    align-items: flex-start; /* Canh trái các phần tử trong product-options */
+    gap: 10px;
+}
+
+#detailproduct .product-options label {
+    display: block;
+    margin-bottom: 5px;
+}
+#detailproduct .product-options select,
+.product-options input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+#detailproduct .product-options .btn-minus,
+.product-options .btn-plus {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#detailproduct .payment {
+    text-align: center;
+}
+
+#detailproduct .payment h2 {
+    margin-bottom: 20px;
+}
+
+#detailproduct .payment form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#detailproduct .payment label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#detailproduct .payment select,
+.payment input[type="text"],
+.payment input[type="number"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+#detailproduct .payment button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#detailproduct .btn-buy-now {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto; /* Căn phải nút */
+}
+.product-description {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center; /* Center the text within the section */
+  }
+  
+
+
+
+
+
+  #admin-thongke {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#admin-thongke h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#admin-thongke .thong-ke-tong, .thong-ke-theo-thoi-gian, .thong-ke-theo-san-pham {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#admin-thongke .thong-ke-tong h2, .thong-ke-theo-thoi-gian h2, .thong-ke-theo-san-pham h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#admin-thongke .thong-tin {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#admin-thongke #chon-thoi-gian {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+/* Style cho bảng thống kê theo sản phẩm */
+#admin-thongke #bang-thong-ke {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#admin-thongke #bang-thong-ke th, #bang-thong-ke td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+}
+
+#admin-thongke #bang-thong-ke th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Style cho biểu đồ theo thời gian (có thể sử dụng thư viện Chart.js hoặc thư viện vẽ biểu đồ khác) */
+#admin-thongke #bieu-do-theo-thoi-gian {
+    width: 600px;
+    height: 400px;
+}
+
+/* Style cho các phần tử khác */
+#admin-thongke .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#admin-thongke .button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+#admin-thongke {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#admin-thongke h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#admin-thongke .thong-ke-tong, .thong-ke-theo-thoi-gian, .thong-ke-theo-san-pham {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#admin-thongke .thong-ke-tong h2, .thong-ke-theo-thoi-gian h2, .thong-ke-theo-san-pham h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#admin-thongke .thong-tin {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#admin-thongke #chon-thoi-gian {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+/* Style cho bảng thống kê theo sản phẩm */
+#admin-thongke #bang-thong-ke {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#admin-thongke #bang-thong-ke th, #bang-thong-ke td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+}
+
+#admin-thongke #bang-thong-ke th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Style cho biểu đồ theo thời gian (có thể sử dụng thư viện Chart.js hoặc thư viện vẽ biểu đồ khác) */
+#admin-thongke #bieu-do-theo-thoi-gian {
+    width: 600px;
+    height: 400px;
+}
+
+/* Style cho các phần tử khác */
+#admin-thongke .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#admin-thongke .button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+#admin-editinforcustomers {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+#admin-editinforcustomers h2{
+    text-align: left;
+    margin-bottom: 20px;
+  }
+#admin-editinforcustomers h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+#admin-editinforcustomers .form-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+#admin-editinforcustomers .form-group {
+    margin-bottom: 15px;
+  }
+  
+#admin-editinforcustomers label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+#admin-editinforcustomers input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+#admin-editinforcustomers button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+#admin-editinforcustomers button:hover {
+    background-color: #0056b3;
+  }
+  
+#admin-editinforcustomers .form-actions {
+    text-align: center;
+  }
+  
+
+
+
+
+
+
+  #admin-accountmanagement .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Heading */
+  #admin-accountmanagement .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px; /* Adjust as desired */
+  }
+  
+  /* Search Wrapper */
+  #admin-accountmanagement .search-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Search Box */
+  #admin-accountmanagement .search-box {
+    flex: 1;
+    display: flex;
+  }
+  
+  #admin-accountmanagement #search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #admin-accountmanagement #search-input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  #admin-accountmanagement .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+  }
+  
+  #admin-accountmanagement .filter-options label {
+    margin-right: 10px;
+    width: 100px; /* Adjust width as needed */
+  }
+  
+  #admin-accountmanagement select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px; /* Adjust width as needed */
+  }
+  
+  /* Button */
+  #admin-accountmanagement button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Optional */
+  }
+  
+  #admin-accountmanagement button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Search Results */
+  #admin-accountmanagement #search-results {
+    margin-top: 30px;
+  }
+  
+  #admin-accountmanagement table.table {
+    width: 1000px; /* Adjust the width in pixels as needed */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    height: 500px; /* Set the table height */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+  }
+  
+  #admin-accountmanagement th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  #admin-accountmanagement th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Product Row Styling */
+  #admin-accountmanagement .product-row {
+    display: flex; /* Enable flexbox for product row */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Add spacing between rows */
+  }
+  
+  
+  /* Product Details */
+  #admin-accountmanagement .product-details {
+    flex: 1; /* Allow details to expand */
+  }
+
+

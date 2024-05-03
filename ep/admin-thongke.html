@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="css\header.css">
+    <link rel="stylesheet" href="css\footer.css">
+</head>
+</head>
+<body>
+    <div id="admin-thongke"> 
+        <h1>Thống kê đơn hàng</h1>
+
+        <section class="thong-ke-tong">
+            <h2>Tổng quan</h2>
+            <div class="thong-tin">
+                <span>Tổng số đơn hàng:</span>
+                <span id="tong-don-hang">100</span>
+            </div>
+            <div class="thong-tin">
+                <span>Tổng doanh thu:</span>
+                <span id="tong-doanh-thu">100.000.000đ</span>
+            </div>
+            <div class="thong-tin">
+                <span>Đơn hàng đang chờ xử lý:</span>
+                <span id="don-hang-cho-xu-ly">20</span>
+            </div>
+            <div class="thong-tin">
+                <span>Đơn hàng đã hoàn thành:</span>
+                <span id="don-hang-hoan-thanh">80</span>
+            </div>
+        </section>
+
+        <section class="thong-ke-theo-thoi-gian">
+            <h2>Thống kê theo thời gian</h2>
+            <select id="chon-thoi-gian">
+                <option value="hom_nay">Hôm nay</option>
+                <option value="tuần_nay">Tuần này</option>
+                <option value="thang_nay">Tháng này</option>
+                <option value="quy_nay">Quý này</option>
+                <option value="nam_nay">Năm nay</option>
+            </select>
+            <canvas id="bieu-do-theo-thoi-gian"></canvas>
+        </section>
+
+        <section class="thong-ke-theo-san-pham">
+            <h2>Thống kê theo sản phẩm</h2>
+            <table id="bang-thong-ke">
+                <thead>
+                    <tr>
+                        <th>Tên sản phẩm</th>
+                        <th>Số lượng bán</th>
+                        <th>Doanh thu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Áo thun nam</td>
+                        <td>50</td>
+                        <td>50.000.000đ</td>
+                    </tr>
+                    <tr>
+                        <td>Quần jean nữ</td>
+                        <td>30</td>
+                        <td>30.000.000đ</td>
+                    </tr>
+                    <tr>
+                        <td>Giày thể thao</td>
+                        <td>20</td>
+                        <td>20.000.000đ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+</body>
+</html>

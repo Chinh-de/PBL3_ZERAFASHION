@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="css\header.css">
+    <link rel="stylesheet" href="css\footer.css">
+</head>
+<body>
+    <div id="admin-accountmanagement">
+        <div class="container">
+            <h1 class="heading">Quản lý tài khoản người dùng</h1>
+            <form action="#">
+              <div class="search-wrapper">
+                <div class="search-box">
+                  <input type="text" placeholder="Tìm kiếm người dùng..." id="search-input" aria-label="Search products">
+                </div>
+                <div class="filter-options">
+                  <label for="product-type">Chức vụ:</label>
+                  <select id="product-type" aria-label="Filter by product type">
+                    <option value="">Tất cả</option>
+                    <option value="dien-thoai">Quản trị viên</option>
+                    <option value="may-tinh">Nhân viên</option>
+                    <option value="tivi">Khách hàng</option>
+                  </select>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Số điện thoại..." id="search-input" aria-label="Search products">
+                  </div>
+                <button type="submit">Tìm kiếm</button>
+              </div>
+            </form>
+        
+            <div id="search-results">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Email</th>
+                    <th>Họ tên</th>
+                    <th>Số điện thoại</th>
+                    <th>Địa chỉ</th>
+                    <th>Chức vụ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Email 1</td>
+                    <td>Họ tên 1</td>
+                    <td>Số điện thoại 1</td>
+                    <td>Đà Nẵng</td>
+                    <td>Quản trị viên</td>
+                  </tr>
+                  <tr>
+                    <td>Email 2</td>
+                    <td>Họ tên 2</td>
+                    <td>Số điện thoại 2</td>
+                    <td>Hồ Chí Minh</td>
+                    <td>Nhân viên</td>
+                  </tr>
+                  </tbody>
+              </table>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
