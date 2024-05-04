@@ -470,75 +470,75 @@ input[type="date"] {
   margin: 0 auto;
 }
 
-.san-pham-thanh-toan {
+#order .san-pham-thanh-toan {
   display: flex;
 }
 
-.san-pham-ben-trai {
+#order .san-pham-ben-trai {
   width: 50%;
   padding: 20px;
   background-color: #f5f5f5;  /* Light background for product section */
   border-right: 1px solid #ddd;  /* Add border to separate sections */
 }
 
-.danh-sach-san-pham {
+#order .danh-sach-san-pham {
   list-style: none;
   padding: 0;
 }
 
-.san-pham {
+#order .san-pham {
   display: flex;
   margin-bottom: 20px;
   border-bottom: 1px solid #ccc;
 }
 
-.hinh-anh {
+#order .hinh-anh {
   width: 100px;
   height: 100px;
   overflow: hidden;
   margin-right: 20px;
 }
 
-.hinh-anh img {
+#order .hinh-anh img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.thong-tin {
+#order .thong-tin {
   flex: 1;
 }
 
-.ten-san-pham {
+#order .ten-san-pham {
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-.gia, .thuong-hieu {
+#order .gia, #order .thuong-hieu {
   margin-bottom: 5px;
 }
 
-.thanh-toan-ben-phai {
+#order .thanh-toan-ben-phai {
   width: 50%;
   padding: 20px;
   background-color: #eee;  /* Light background for payment section */
 }
 
-.tong-tien {
+#order .tong-tien {
   font-size: 20px;
   margin-bottom: 20px;
 }
 
-.gia {
+#order .gia {
   font-weight: bold;
 }
 
-.nut-bam {
+#order .nut-bam {
   display: flex;
   justify-content: space-between;
 }
 
-.thanh-toan, .tiep-tuc {
+#order .thanh-toan, #order .tiep-tuc {
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -546,7 +546,7 @@ input[type="date"] {
   border: none;  /* Remove border for cleaner buttons */
 }
 
-.thanh-toan:hover, .tiep-tuc:hover {
+#order .thanh-toan:hover, #order .tiep-tuc:hover {
   background-color: #0056b3;
 }
 
@@ -959,54 +959,59 @@ input[type="date"] {
 /*CSS FORGOTPASSWORD */
 
 #forgotpassword {
-  width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
+  width: 400px; /* Maintain width for clarity */
+  margin: 0 auto; /* Center horizontally */
+  padding: 30px; /* Increase padding for better spacing */
+  border: 1px solid #ddd; /* Lighter border color */
   border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 #forgotpassword h1 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 40px; /* Increase heading size */
+  color: #333; /* Darker heading color */
 }
 
 #forgotpassword .form-group {
   margin-bottom: 15px;
 }
-#forgotpassword .form-group-login{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
+#forgotpassword .form-group-login {
+  display: flex; /* Maintain flexbox layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
 }
+
 #forgotpassword label {
   display: block;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 #forgotpassword input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"] {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
+#forgotpassword input[type="email"] {
+  width: 100%; /* Maintain full width */
+  padding: 10px; /* Maintain padding for ease of input */
+  border: 1px solid #ccc; /* Consistent border style */
   border-radius: 5px;
 }
 
 #forgotpassword button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
+  background-color: #007bff; /* Primary blue color */
+  color: #fff; /* White text */
+  padding: 12px 25px; /* Increase button size */
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.2s ease; /* Smooth hover effect */
 }
 
 #forgotpassword button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Darker blue on hover */
 }
+
 
 
 
