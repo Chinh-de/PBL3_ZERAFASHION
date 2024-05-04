@@ -462,7 +462,7 @@ input[type="date"] {
 
 
 
-/* ORDER */
+/*CSS ORDER */
 
 #order {
   width: 80%;  /* Set width to 80% for a more responsive layout */
@@ -563,7 +563,7 @@ input[type="date"] {
 
 
 
-/* MAIN */
+/*CSS MAIN */
 
 #main {
   display: flex;
@@ -690,7 +690,7 @@ input[type="date"] {
 
 
 
-/* LOGIN */
+/*CSS LOGIN */
 
 
 #login {
@@ -763,7 +763,7 @@ input[type="date"] {
 
 
 
-/* INFORPRODUCT */
+/*CSS INFORPRODUCT */
 
 #inforproduct {
   padding: 20px;
@@ -942,7 +942,7 @@ input[type="date"] {
 
 
 
-/* FORGOTPASSWORD */
+/*CSS FORGOTPASSWORD */
 
 #forgotpassword {
   width: 400px;
@@ -1009,7 +1009,7 @@ input[type="date"] {
 
 
 
-/* DETAILPRODUCT */
+/*CSS DETAILPRODUCT */
 
 #detailproduct {
   width: 80%;
@@ -1132,7 +1132,7 @@ input[type="date"] {
 
 
 
-/* ADMIN-THONGKE */
+/*CSS ADMIN-THONGKE */
 
 #admin-thongke {
   width: 80%;
@@ -1223,7 +1223,7 @@ input[type="date"] {
 
 
 
-/* ADMIN-EDITINFORCUSTOMER */
+/*CSS ADMIN-EDITINFORCUSTOMER */
 
 #admin-editinforcustomers {
   width: 500px;
@@ -1291,7 +1291,7 @@ textarea {
 
 
 
-/* ADMIN-ACCOUNTMANAGEMENT */
+/*CSS ADMIN-ACCOUNTMANAGEMENT */
 
 #admin-accountmanagement .container {
   width: 80%;
@@ -1415,7 +1415,7 @@ textarea {
 
 
 
-/* BUY */
+/*CSS BUY */
 #buy-content__wrapper {
   display: flex; /* Enable flexbox for side-by-side layout */
   width: 80%;
@@ -1552,7 +1552,7 @@ background-color: #0056b3; /* Darker blue color on hover */
 
 
 
-/*inforcustomers */
+/*CSS INFORCUSTOMERS */
 
 #inforcustomers{
   width: 80%;
