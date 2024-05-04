@@ -15,6 +15,33 @@ displayNextAd();
 setInterval(displayNextAd, 3000);
 //header thay đổi quảng cáo mỗi 3s
 
+//hiển thị searchbar
+var searchButton = document.getElementById('searchButton');
+var searchBar = document.getElementById('searchBar');
+var exitSearchBar = document.getElementById('exit-searchBar');
+searchButton.addEventListener('click', function(event) {
+    event.stopPropagation(); //không lan truyền sự kiện đi nơi khác
+    turnSearchBar(); // Gọi hàm để hiển thị hoặc ẩn thanh tìm kiếm
+});
+exitSearchBar.addEventListener('click', function(event) {
+    event.stopPropagation(); //không lan truyền sự kiện đi nơi khác
+    turnSearchBar(); // Gọi hàm để hiển thị hoặc ẩn thanh tìm kiếm
+});
+
+document.body.addEventListener('click', function(event) {
+    if (searchBar.style.display === 'block' && !searchBar.contains(event.target)) {
+        turnSearchBar(); // Nếu thanh tìm kiếm đang hiển thị và không có sự kiện click nào xảy ra trong thanh tìm kiếm, thì ẩn nó
+    }
+});
+
+function turnSearchBar() {
+    if (searchBar.style.display === 'block') {
+        searchBar.style.display = 'none'; // Nếu đang hiển thị, ẩn đi
+    } else {
+        searchBar.style.display = 'block'; // Nếu đang ẩn, hiển thị lên
+    }
+}
+
 
 //login
 
