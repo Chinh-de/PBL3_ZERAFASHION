@@ -351,7 +351,7 @@ body {
   
   /* Search Wrapper */
   
-  form {
+  #staff-listcustomers form {
     display: flex; /* Make the form a flexbox for horizontal arrangement */
     flex-wrap: wrap; /* Allow items to wrap onto multiple lines if needed */
     justify-content: space-between; /* Distribute remaining space evenly */
