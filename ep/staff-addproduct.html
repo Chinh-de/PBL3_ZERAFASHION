@@ -9,38 +9,56 @@
     <link rel="stylesheet" href="css\footer.css">
 </head>
 <body>
-    <div id="staff-addproduct"> 
+    <div id="staff-addproduct">
         <h1>Thêm sản phẩm</h1>
         <h2>Thông tin chung</h2>
-
+      
         <form action="#">
+          <fieldset>
+            <legend>Thông tin cơ bản</legend>
             <div class="form-group">
-                <label for="tensp">Tên sản phẩm:</label>
-                <input type="text" id="tensp" name="tensp" required>
+              <label for="tensp">Tên sản phẩm:</label>
+              <input type="text" id="tensp" name="tensp" required>
             </div>
-
+      
             <div class="form-group">
-                <label for="gia">Giá thành:</label>
-                <input type="number" id="gia" name="gia" required>
+              <label for="gia">Giá thành:</label>
+              <input type="number" id="gia" name="gia" min="1" required>
             </div>
-
+      
             <div class="form-group">
-                <label for="nhanhieu">Nhãn hiệu:</label>
-                <input type="text" id="nhanhieu" name="nhanhieu" required>
+              <label for="nhanhieu">Nhãn hiệu:</label>
+              <input type="text" id="nhanhieu" name="nhanhieu" required>
             </div>
-
+          </fieldset>
+      
+          <fieldset>
+            <legend>Chi tiết sản phẩm</legend>
             <div class="form-group">
-                <label for="khoiluong">Khối lượng:</label>
-                <input type="number" id="khoiluong" name="khoiluong" required>
+              <label for="loai">Loại sản phẩm:</label>
+              <select id="loai" name="loai" required>
+                <option value="">Chọn loại sản phẩm</option>
+                <option value="aothun">Áo thun</option>
+                <option value="quan">Quần</option>
+                <option value="giay">Giày</option>
+                <option value="phukien">Phụ kiện</option>
+              </select>
             </div>
-
+      
             <div class="form-group">
-                <label for="soluong">Số lượng:</label>
-                <input type="number" id="soluong" name="soluong" required>
+              <label for="soluong">Số lượng:</label>
+              <input type="number" id="soluong" name="soluong" min="1" required>
             </div>
-
-            <button type="submit">Thêm</button>
+      
+            <div class="form-group">
+              <label for="hinhanh">Hình ảnh:</label>
+              <input type="file" id="hinhanh" name="hinhanh" required>
+            </div>
+          </fieldset>
+      
+          <button type="submit">Thêm</button>
         </form>
-    </div>
+      </div>
+      
 </body>
 </html>
