@@ -1,4 +1,3 @@
-/* header.css */
 .header{
   width: 100%;
   height: 150px;
@@ -165,19 +164,24 @@
 /* end header.css */
 
 
-
-
-
-
-  
-/* CSS */
-
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
 /* Basic Styles */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -315,6 +319,17 @@ body {
   flex: 1; /* Allow details to expand */
 }
 
+#staff-listproduct img {
+  width: 300px; /* Chiều rộng cố định 100px */
+  height: 200px;
+  max-width: 50%; 
+  max-height: 300px; 
+  object-fit: contain;
+  display: block; 
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;   
+}
 
 
 
@@ -454,7 +469,6 @@ body {
 
 
 
-
 /*CSS STAFF-ADDPRODUCT */
 
 
@@ -465,6 +479,8 @@ body {
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #staff-addproduct h1 {
@@ -639,6 +655,8 @@ input[type="date"] {
   width: 80%;  /* Set width to 80% for a more responsive layout */
   display: flex;
   margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #order .san-pham-thanh-toan {
@@ -744,6 +762,8 @@ input[type="date"] {
   max-width: 1140px;
   margin: 0 auto;
   padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
  
 }
 #main .product-list {
@@ -896,7 +916,7 @@ input[type="date"] {
 }
 
 /* Form group styling */
-.form-group {
+#login .form-group {
   margin-bottom: 15px;
   display: flex; /* Arrange label and input horizontally */
   align-items: center; /* Vertically align label and input */
@@ -982,6 +1002,8 @@ input[type="date"] {
 #inforproduct {
   padding: 20px;
   display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* #inforproduct .container {
@@ -1144,6 +1166,19 @@ input[type="date"] {
 }
 
 
+#inforproduct img {
+  width: 300px; /* Chiều rộng cố định 100px */
+  height: 200px;
+  max-width: 50%; 
+  max-height: 300px; 
+  object-fit: contain;
+  display: block; 
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  border-radius: 5px;   
+}
+
+
 
 
 
@@ -1157,6 +1192,8 @@ input[type="date"] {
 #inforcustomers{
   width: 80%;
   margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 /* Kiểu cho tiêu đề */
 #inforcustomers h1 {
@@ -1229,7 +1266,6 @@ input[type="date"] {
 #inforcustomers #btnQuenMatKhau {
   background-color: #dc3545;
 }
-
 
 
 
@@ -1330,6 +1366,9 @@ input[type="date"] {
 
 
 
+
+
+
 /*CSS DETAILPRODUCT */
 
 
@@ -1342,6 +1381,8 @@ input[type="date"] {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Chia main thành ba cột, mỗi cột có kích thước bằng 1 phần */
   gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 
@@ -1442,6 +1483,8 @@ input[type="date"] {
   padding: 20px;
   border: 1px solid #ccc;
   text-align: center; /* Center the text within the section */
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 
@@ -1457,6 +1500,8 @@ input[type="date"] {
   display: flex; /* Enable flexbox for side-by-side layout */
   width: 80%;
   margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #buy-content__wrapper .buy-content__payment,
@@ -1599,6 +1644,8 @@ background-color: #0056b3; /* Darker blue color on hover */
   width: 80%;
   margin: 0 auto;
   padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #admin-thongke h1 {
@@ -1687,10 +1734,12 @@ background-color: #0056b3; /* Darker blue color on hover */
 /*CSS ADMIN-EDITINFORCUSTOMER */
 
 #admin-editinforcustomers {
-  width: 500px;
+  width: 60%;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 #admin-editinforcustomers h2{
   text-align: left;
@@ -1765,6 +1814,8 @@ textarea {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* Heading */
@@ -1906,46 +1957,53 @@ textarea {
 
 
 
-
-
 /* CSS FOOTER */
+
+
+
 #footer {
-    background-color: #f0f0f0;
-    padding: 20px 0;
-    border-top: 1px solid #ddd;
-  }
-  
-  #footer .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  #footer .footer-left {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  #footer .social-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #footer .social-links li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  #footer .social-links a {
-    color: #666;
-    font-size: 18px;
-  }
-  
-  #footer .footer-right {
-    font-size: 14px;
-    color: #666;
-  }
-  
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+}
+
+#footer .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer .footer-left {
+  font-size: 14px;
+  color: #666;
+}
+
+#footer .social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer .social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#footer .social-links a {
+  color: #666;
+  font-size: 18px;
+}
+
+#footer .footer-right {
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+
+
+
