@@ -16,54 +16,97 @@
                 <span class="ad-text">Giao hàng nội thành trong ngày</span>
                 <span class="ad-text">Đổi trả trong 7 ngày</span>
             </div>
-            <script src="js/main.js"></script>  <!-- thay đổi quảng cáo mỗi 3s -->
-            
             <div class="header__logo-img">
-                <a href="index.html"><img id="logo" src="./image/ZERAFASHION.png" alt="Logo"></a>
+                <a href="#"><img id="logo" src="./image/ZERAFASHION.png" alt="Logo"></a>
             </div class>
-    
+
             <div class="header__logo-mininav">
-                <ul class="header__logo-mininavlist">
-                    <li class="header__logo-mininavitem"><input type="text" id="searchInput" name="searchInput" placeholder="Nhập từ khóa tìm kiếm..."></li>
-                    <li class="header__logo-mininavitem"><button class="header__logo--icon" type="submit" onclick="searchFunction()"><i class="fa-solid fa-magnifying-glass"></i></button></li>
-                    <li class="header__logo-mininavitem" id = "dropdown-user">
-                        <button class="header__logo--icon" id = "dropdown-btn"><i class="fa-solid fa-circle-user"></i></button>
-                        <div class="dropdown-user-content">
-                            <a href="#">Thông tin cá nhân</a>
-                            <a href="#">Lịch sử mua hàng</a>
-                            <a href="#">Đăng xuất</a>
-                        </div>
-                    </li>
-                    <li class="header__logo-mininavitem"><button class="header__logo--icon" onclick="cartFunction()"><i class="fa-solid fa-bag-shopping"></i></i></button></li>
-                </ul>
+                <!-- <div class="header__logo-mininavitem"><input type="text" id="searchInput" name="searchInput" placeholder="Nhập từ khóa tìm kiếm..."></div> -->
+                <div class="header__logo-mininavitem">
+                    <button class="header__logo--icon" id= "searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="header__logo-mininavitem" id = "dropdown-user">
+                    <span class="header__logo--icon"><i class="fa-solid fa-circle-user"></i></span>
+                    <div class="dropdown-user-content">
+                        <a href="#">Thông tin cá nhân</a>
+                        <a href="#">Lịch sử mua hàng</a>
+                        <a href="#">Đăng xuất</a>
+                    </div>
+                </div>
+                <div class="header__logo-mininavitem">
+                    <a href="#" class="header__logo--icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="count_item_pr">99</span>
+                    </a>
+                </div>
             </div>
         </section>
+        <!-- search bar -->
+        <div id="searchBar" class="search-bar">
+            <input type="text" placeholder="Nhập từ khóa">
+            <button class="search-bar__button" id= "searchButton-search-bar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="search-bar__button" id = "exit-searchBar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
         <!-- end header__logo-->
         <nav class="header__navbar">
             <ul class="header__navbar-list">
                 <h3>
-                  <li class="header__navbar-item"> <a href="index.html" id="a1">SẢN PHẨM</a></li>
-                  <li class="header__navbar-item"> <a href="index.html" id="a1">ÁO NAM</a></li>
-                  <li class="header__navbar-item"> <a href="index.html" id="a1">QUẦN NAM</a></li>
-                  <li class="header__navbar-item"> <a href="index.html" id="a1">GIÀY NAM</a></li>
-                  <li class="header__navbar-item"> <a href="index.html" id="a1">ĐỒ THỂ THAO</a></li>
-                  <li class="header__navbar-item"> <a href="index.html" id="a1">VỀ CHÚNG TÔI</a></li>
+                  <li class="header__navbar-item"> <a href="#" id="a1">SẢN PHẨM</a></li>
+                  <li class="header__navbar-item"> <a href="#" id="a1">ÁO NAM</a></li>
+                  <li class="header__navbar-item"> <a href="#" id="a1">QUẦN NAM</a></li>
+                  <li class="header__navbar-item"> <a href="#" id="a1">GIÀY NAM</a></li>
+                  <li class="header__navbar-item"> <a href="#" id="a1">ĐỒ THỂ THAO</a></li>
+                  <li class="header__navbar-item"> <a href="#" id="a1">VỀ CHÚNG TÔI</a></li>
                 </h3>
             </ul>
         </nav>
-    
+
         <!-- end header__navbar -->
     </header>
+    
     <!-- end header -->
+
     <div id="inforproduct"> 
         <div class="container">
             <aside class="bo-loc">
                 <h2>Bộ lọc</h2>
                 <ul>
                     <li>
-                        <a href="#">Loại sản phẩm:</a>
+                        <h3>Danh mục:</h3>
                         <ul class="loai-san-pham">
-                            <li><a href="#">Áo thun</a></li>
+                            <li>
+                                <div class="category-item">
+                                    <input type="checkbox" id = "product1" class="category-toggle">
+                                    <label class="category-name" for="product1">Áo test độ dài vlllllllllllllllllllllllllll</label>
+                                    <ul class="sub-category">
+                                        <li><a class="sub-category-name" href="">Áo sơ mi</a></li>
+                                        <li><a class="sub-category-name" href="">Áo thun</a></li>
+                                        <li><a class="sub-category-name" href="">Áo polo</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="category-item">
+                                    <input type="checkbox" id = "product2" class="category-toggle">
+                                    <label class="category-name" for="product2">Áo</label>
+                                    <ul class="sub-category">
+                                        <li><a class="sub-category-name" href="">Áo sơ mi</a></li>
+                                        <li><a class="sub-category-name" href="">Áo thun</a></li>
+                                        <li><a class="sub-category-name" href="">Áo polo</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="category-item">
+                                    <input type="checkbox" id = "product3" class="category-toggle">
+                                    <label class="category-name" for="product3">Áo</label>
+                                    <ul class="sub-category">
+                                        <li><a class="sub-category-name" href="">Áo sơ mi</a></li>
+                                        <li><a class="sub-category-name" href="">Áo thun</a></li>
+                                        <li><a class="sub-category-name" href="">Áo polo</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li><a href="#">Áo sơ mi</a></li>
                             <li><a href="#">Quần jean</a></li>
                             <li><a href="#">Quần kaki</a></li>
@@ -80,6 +123,13 @@
                             <option value="XL">XL</option>
                             <option value="XXL">XXL</option>
                         </select>
+                    </div>
+                    <div>
+                        <h3>Khoảng giá</h3>
+                        <label for="priceFilter">Giá bắt đầu:</label>
+                        <input type="text" id="priceFilterStart" name="priceFilter" required>
+                        <label for="priceFilter">Giá bắt đầu:</label>
+                        <input type="text" id="priceFilterEnd" name="pricefilter" required>
                     </div>
                 </ul>
                 <button type="submit">Tìm kiếm</button>

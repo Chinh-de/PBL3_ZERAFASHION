@@ -813,7 +813,23 @@ input[type="password"] {
 
 
 
+/* css danh muc dong */
+.category-name {
+  cursor: pointer;
+  font-weight: bold;
+}
+.sub-category {
+  display: none;
+  list-style: none;
+  padding-left: 0;
+}
 
+.category-toggle {
+  display: none;
+}
+.category-toggle:checked + .category-name + .sub-category {
+  display: block;
+}
 
 /* inforproduct */
 
