@@ -152,9 +152,7 @@
   font-weight: bold;
 }
 .header__navbar-item:hover {
-  /* left: 100%;
-  top: 0; */
-  /* padding: 2px; */
+ 
   background-color: #3C3C3C;
   transform: translateY(-3.14px);
   z-index: 1;
@@ -1652,6 +1650,12 @@ background-color: #0056b3; /* Darker blue color on hover */
   padding: 0.5rem;
 }
 
+#buy-content__wrapper .buy-content__order-products{
+  height: 450px;
+  overflow-y: auto;
+}
+
+
 #buy-content__wrapper .buy-content__order div:last-child {
   border-bottom: none; /* Remove bottom border for the last div */
 }
@@ -2031,6 +2035,70 @@ textarea {
 
 
 
+/* sucess order CSS */
+#sucess-order{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+#sucess-order .fa-check{
+  color: #ffffff;
+  font-size: 700%;
+}
+#sucess-order .fa-check-bg {
+  width: 100px; 
+  height: 100px; 
+  background-color: #63E6BE;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 20px;
+}
+#sucess-order p{
+  font-size: 24px;
+  margin: 10px 20px;
+}
+#sucess-order button{
+  font-size: 30px;
+  border-radius: 20px;
+  margin: 10px 20px;
+  background-color: #ff0000;
+  padding: 10px;
+}
 
+/*end sucess order CSS */
 
+/* error CSS */
+#error{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+#error .fa-x{
+  color: #ffffff;
+  font-size: 600%;
+  margin: auto;
+  background-color: red;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+#error p{
+  font-size: 24px;
+  margin: 10px 20px;
+}
+#error button{
+  font-size: 30px;
+  border-radius: 20px;
+  margin: 10px 20px;
+  background-color: #ff0000;
+  padding: 10px;
+}
+
+/*end error CSS */
 
