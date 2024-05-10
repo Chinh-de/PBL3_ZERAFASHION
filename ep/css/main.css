@@ -2079,6 +2079,7 @@ textarea {
   width: 100%;
   margin: 0 auto;
 }
+
 #error .fa-x{
   color: #ffffff;
   font-size: 600%;
@@ -2102,3 +2103,148 @@ textarea {
 
 /*end error CSS */
 
+
+
+/* order history css */
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.grid *{
+  box-sizing: inherit;
+}
+.grid__full-width {
+  width: 100%;
+}
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.grid__column-2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 16.6667%;
+  float: left;
+}
+.grid__column-10 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 83.3333%;
+  float: right;
+}
+.grid__column-1dot2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 10%;
+  float: left;
+}
+.grid__column-2dot4 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 20%;
+  float: right;
+}
+
+.grid__column-8dot4 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 70%;
+  float: center;
+}
+
+.OrderHistory__usermenu p{
+  font-weight: bold;
+  font-size: 16px;
+}
+.OrderHistory__usermenu-option i{
+  font-size: 18px;
+  margin: 10px 5px;
+}
+.OrderHistory__usermenu-option a,
+.OrderHistory-orders-option {
+  font-size: 18px;
+  margin: 10px 5px;
+  text-decoration: none;
+  color: black;
+}
+.OrderHistory__usermenu-option:hover,
+.OrderHistory-orders-option:hover{
+  color: red;
+}
+
+.OrderHistory-orders-nav{
+  width: 100%;
+  min-height: 30px;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: yellow;
+}
+.OrderHistory-orders-option{
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.OrderHistory-orders-item{
+  background-color: #FFFEFB;
+  margin: 20px 0px;
+  border: 3px solid #63a3fcba;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.OrderHistory-orders-product{
+  background-color: #F7F8FA;
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+}
+.OrderHistory-orders-itemID{
+  display: flex;
+  padding: 0px 20px;
+}
+#OrderHistory-orders-MaDonHang{
+  
+  float:left;
+  margin-right: auto;
+}
+#OrderHistory-orders-TrangThai{
+  
+  float:right;
+  margin-left: auto;
+}
+.OrderHistory-orders-product-price{
+  color: red;
+}
+#OrderHistory-orders-product-total{
+  color: red;
+  float: right;
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0px 10px;
+
+}
+.OrderHistory-orders-product-btn{
+  float: right;
+  margin: 5px 10px;
+  padding: 3px;
+  font-size: 18px;   
+  border-radius: 3.1416px; 
+  background-color: #EE4D2D;
+  color: #ffffff;
+  border: #EE4D2D;
+}
+#OrderHistory-orders-exitBy{
+  width: 30%;
+  float: left;
+  font-size: 18px;
+  margin: 5px 10px;
+  padding: 3px;
+}
+/* end order history css */

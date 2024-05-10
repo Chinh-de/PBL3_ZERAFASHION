@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderHistory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <header class = "header">
+        <section class = "header__logo">
+            <div class="header__logo-ads" id="ads">
+                <span class="ad-text">Miễn phí vận chuyển cho đơn hàng từ 800.000đ</span>
+                <span class="ad-text">Giao hàng nội thành trong ngày</span>
+                <span class="ad-text">Đổi trả trong 7 ngày</span>
+            </div>
+            <div class="header__logo-img">
+                <a href="#"><img id="logo" src="./image/ZERAFASHION.png" alt="Logo"></a>
+            </div class>
+
+            <div class="header__logo-mininav">
+                <!-- <div class="header__logo-mininavitem"><input type="text" id="searchInput" name="searchInput" placeholder="Nhập từ khóa tìm kiếm..."></div> -->
+                <div class="header__logo-mininavitem">
+                    <button class="header__logo--icon" id= "searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="header__logo-mininavitem" id = "dropdown-user">
+                    <span class="header__logo--icon"><i class="fa-solid fa-circle-user"></i></span>
+                    <div class="dropdown-user-content">
+                        <a href="#">Thông tin cá nhân</a>
+                        <a href="#">Lịch sử mua hàng</a>
+                        <a href="#">Đăng xuất</a>
+                    </div>
+                </div>
+                <div class="header__logo-mininavitem">
+                    <a href="#" class="header__logo--icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="count_item_pr">99</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- search bar -->
+        <div id="searchBar" class="search-bar">
+            <input type="text" placeholder="Nhập từ khóa">
+            <button class="search-bar__button" id= "searchButton-search-bar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="search-bar__button" id = "exit-searchBar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <!-- end header__logo-->
+        <nav class="header__navbar">
+            <ul class="header__navbar-list">
+                <h3>
+                  <li class="header__navbar-item"> <a href="#" id="a1">SẢN PHẨM</a></li>
+                  <li class="header__navbar-item"> <a href="#" id="a1">ÁO NAM</a></li>
+                  <li class="header__navbar-item"> <a href="#" id="a1">QUẦN NAM</a></li>
+                  <li class="header__navbar-item"> <a href="#" id="a1">GIÀY NAM</a></li>
+                  <li class="header__navbar-item"> <a href="#" id="a1">ĐỒ THỂ THAO</a></li>
+                  <li class="header__navbar-item"> <a href="#" id="a1">VỀ CHÚNG TÔI</a></li>
+                </h3>
+            </ul>
+        </nav>
+        <!-- end header__navbar -->
+    </header>
+
+
+
+    <div id="OrderHistory" class = "grid">
+        <div class="grid__row">
+            <div class="grid__column-2">
+                <aside class="OrderHistory__usermenu">
+                    <p id ="OrderHistory__usermenu-name">Xin chào <br> Nguyễn Chế Định</p>
+                    <div class="OrderHistory__usermenu-account">
+                        <div class="OrderHistory__usermenu-option">
+                            <a href="#"><i class="fa-solid fa-user"></i> Tài khoản của tôi</a>
+                        </div>
+                        <div class="OrderHistory__usermenu-option">
+                            <a href=""><i class="fa-solid fa-file-invoice-dollar"></i> Đơn mua</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="grid__column-10">
+                    <section class="OrderHistory-orders">
+                        <nav class="OrderHistory-orders-nav">
+                            <a class="OrderHistory-orders-option" href="">Tất cả</a> |
+                            <a class="OrderHistory-orders-option" href="">Chờ xác nhận</a> |
+                            <a class="OrderHistory-orders-option" href="">Đang giao</a> |
+                            <a class="OrderHistory-orders-option" href="">Thành công</a> |
+                            <a class="OrderHistory-orders-option" href="">Đã hủy</a> 
+                        </nav>
+
+                        <div class="OrderHistory-orders-list">
+                            <div class="OrderHistory-orders-item">
+                                <div class="OrderHistory-orders-itemID">
+                                    <p id="OrderHistory-orders-MaDonHang">Mã đơn hàng: 102220223</p>
+                                    <p id="OrderHistory-orders-TrangThai">Trạng thái: Đã hủy</p>
+                                </div>
+                                <div class="OrderHistory-orders-products">
+                                    <div class="OrderHistory-orders-product grid__row">
+                                            <img class="OrderHistory-orders-products grid__column-1dot2" src="https://product.hstatic.net/200000690725/product/fstp013-5_53657408609_o_a6d428af703341789acf7cca4a8a54a0_master.jpg" alt="AnhSP">
+                                            <p class="grid__column-8dot4">Cường lực HYPER+ cho Realme GT2, GT2 Pro, GT Neo 2, Neo 3, Q5 Pro, Neo 3T - Trong suốt - siêu mỏng không khoét lỗ cam</p>
+                                        <p class="OrderHistory-orders-product-price grid__column-2dot4">500.000đ</p>
+                                    </div>
+                                    <div class="OrderHistory-orders-product grid__row">
+                                        <img class="OrderHistory-orders-products grid__column-1dot2" src="https://product.hstatic.net/200000690725/product/fstp013-5_53657408609_o_a6d428af703341789acf7cca4a8a54a0_master.jpg" alt="AnhSP">
+                                        <p class="grid__column-8dot4">Cường lực HYPER+ cho Realme GT2, GT2 Pro, GT Neo 2, Neo 3, Q5 Pro, Neo 3T - Trong suốt - siêu mỏng không khoét lỗ cam</p>
+                                    <p class="OrderHistory-orders-product-price grid__column-2dot4">500.000đ</p>
+                                    </div>
+                                </div>
+                                
+                                
+                                <p id="OrderHistory-orders-product-total"> Thành tiền 500.000đ</p>
+                                <div>
+                                    <p id="OrderHistory-orders-exitBy">Hủy bởi: Người mua</p> 
+                                    <!-- nếu đơn hàng bị hủy -->
+                                    <button class="OrderHistory-orders-product-btn">Hủy đơn hàng</button> 
+                                    <!-- nếu đơn hàng đang chờ xác nhận -->
+                                    <button class="OrderHistory-orders-product-btn">Xem hóa đơn</button>
+                                    <!--nếu đơn hàng thành công -->
+                                </div>
+                            </div>
+
+                            
+                            <div class="OrderHistory-orders-item">
+                                <div class="OrderHistory-orders-itemID">
+                                    <p id="OrderHistory-orders-MaDonHang">Mã đơn hàng: 102220223</p>
+                                    <p id="OrderHistory-orders-TrangThai">Trạng thái: Đã hủy</p>
+                                </div>
+                                <div class="OrderHistory-orders-products">
+                                    <div class="OrderHistory-orders-product grid__row">
+                                            <img class="OrderHistory-orders-products grid__column-1dot2" src="https://product.hstatic.net/200000690725/product/fstp013-5_53657408609_o_a6d428af703341789acf7cca4a8a54a0_master.jpg" alt="AnhSP">
+                                            <p class="grid__column-8dot4">Cường lực HYPER+ cho Realme GT2, GT2 Pro, GT Neo 2, Neo 3, Q5 Pro, Neo 3T - Trong suốt - siêu mỏng không khoét lỗ cam</p>
+                                        <p class="OrderHistory-orders-product-price grid__column-2dot4">500.000đ</p>
+                                    </div>
+                                    <div class="OrderHistory-orders-product grid__row">
+                                        <img class="OrderHistory-orders-products grid__column-1dot2" src="https://product.hstatic.net/200000690725/product/fstp013-5_53657408609_o_a6d428af703341789acf7cca4a8a54a0_master.jpg" alt="AnhSP">
+                                        <p class="grid__column-8dot4">Cường lực HYPER+ cho Realme GT2, GT2 Pro, GT Neo 2, Neo 3, Q5 Pro, Neo 3T - Trong suốt - siêu mỏng không khoét lỗ cam</p>
+                                    <p class="OrderHistory-orders-product-price grid__column-2dot4">500.000đ</p>
+                                    </div>
+                                </div>
+                                
+                                
+                                <p id="OrderHistory-orders-product-total"> Thành tiền 500.000đ</p>
+                                <div>
+                                    <p id="OrderHistory-orders-exitBy">Hủy bởi: Người mua</p> 
+                                    <!-- nếu đơn hàng bị hủy -->
+                                    <button class="OrderHistory-orders-product-btn">Hủy đơn hàng</button> 
+                                    <!-- nếu đơn hàng đang chờ xác nhận -->
+                                    <button class="OrderHistory-orders-product-btn">Xem hóa đơn</button>
+                                    <!--nếu đơn hàng thành công -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; 2024 ZERAFASHION</p>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <p>Địa chỉ: 54 Nguyễn Lương Bằng, phường Hòa Khánh, quận Liên Chiểu, thành phố Đà Nẵng</p>
+                <p>Điện thoại: 03533884230</p>
+                <p>Email: chinhdeit@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
