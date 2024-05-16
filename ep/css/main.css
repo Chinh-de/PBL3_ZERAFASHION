@@ -1,3 +1,19 @@
+#placeholdersm{
+  height: 76px
+}
+#placeholder{
+  height: 56px;
+}
+#admin-logosm{
+  height: 60px;
+}
+#admin-logo{
+  height: 40px;
+}
+
+
+
+
 .header{
   width: 100%;
   height: 150px;
@@ -490,7 +506,7 @@ body {
 
 
 #staff-addproduct {
-  width: 80%; /* Adjust width as needed */
+  /* width: 80%;  */
   margin: 0 auto; /* Center the form */
   padding: 20px;
   border: 1px solid #ddd;
@@ -541,6 +557,7 @@ body {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  width: auto;
 }
 
 #staff-addproduct input[type="text"],
@@ -580,7 +597,18 @@ body {
 }
 
 
-
+#staff-addproduct table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+#staff-addproduct table, th, td {
+  border: 1px solid black;
+}
+#staff-addproduct th, td {
+  padding: 10px;
+  text-align: center;
+}
 
 
 

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <header class="admin-layout">
+            <div class="d-none d-sm-flex" id="placeholdersm"></div>
+            <div class="d-sm-none" id="placeholder"></div>
+            <nav class="navbar navbar-dark bg-black text-white fixed-top">
+                <div class="container">
+                    <div class="col-sm-4 col-3 d-flex align-items-center justify-content-sm-start">
+                        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                            <span><i class="fa-solid fa-list fa-lg" style="color: #ffffff;"></i></span>
+                        </button>
+                        <span class="ps-3 d-none d-sm-flex text-white">Trang Quản Trị</span>
+                    </div>
+    
+                    <div class="col-sm-4 col-6 d-flex align-items-center justify-content-center">
+                        <a class="navbar-logo" href="#">
+                            <img class="d-none d-sm-flex" src="/image/logo-white.png" alt="LOGO" id="admin-logosm" />
+                            <img class="d-sm-none" src="/image/logo-white.png" alt="LOGO" id="admin-logo"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-3 d-flex align-items-center justify-content-end">
+                        <span class="d-sm-flex d-none pe-3 text-white">Nguyễn Chế Định</span>
+                        <span data-bs-toggle="dropdown">
+                            <i class="fa-regular fa-user fa-xl" style="color: #ffffff;"></i>
+                        </span>
+                        <ul class="dropdown-menu" style="left: auto;">
+                            <li><a class="dropdown-item" href="#">Thông tin cá nhân</a></li>
+                            <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="offcanvas offcanvas-start text-bg-dark" id="offcanvasDarkNavbar">
+                        <div class="offcanvas-header">
+                            <img class="offcanvas-title" src="/image/logo-white.png" alt="LOGO" height="80px" />
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+    
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Tổng quan</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Quản lý sản phẩm
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">Thêm sản phẩm</a></li>
+                                        <li><a class="dropdown-item" href="#">Xem danh sách sản phẩm</a></li>
+                                        <li><a class="dropdown-item" href="#">Sửa thông tin sản phẩm</a></li>
+                                        <li><a class="dropdown-item" href="#">Xóa sản phẩm</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Quản lý bán hàng
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">Đơn hàng mới</a></li>
+                                        <li><a class="dropdown-item" href="#">Đơn hàng hiện tại </a></li>
+                                        <li><a class="dropdown-item" href="#">Lịch sử bán hàng</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Quản lý nhân viên
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">Thêm sản phẩm</a></li>
+                                        <li><a class="dropdown-item" href="#">Xem danh sách sản phẩm</a></li>
+                                        <li><a class="dropdown-item" href="#">Sửa thông tin sản phẩm</a></li>
+                                        <li><a class="dropdown-item" href="#">Xóa sản phẩm</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" aria-expanded="false">
+                                        Danh sách nhân viên
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" aria-expanded="false">
+                                        Danh sách khách hàng
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" aria-expanded="false">
+                                        Quản lý danh mục
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        
+        <main id="staff-addproduct" class="container">
+            <h1>Thêm sản phẩm</h1>
+        
+            <form action="#">
+            <fieldset>
+                <div class="form-group">
+                    <label for="tensp">Tên sản phẩm:</label>
+                    <input type="text" id="tensp" name="tensp" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="gia">Giá thành:</label>
+                    <input type="number" id="gia" name="gia" min="1" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="mota">Mô tả:</label>
+                    <textarea type="text" id="mota" name="mota" rows="10" cols="50"  required></textarea>
+                </div>
+                <div class="form-group">
+                <label for="loai">Loại sản phẩm:</label>
+                    <select id="loai" name="loai" required>
+                        <option value="" selected disabled hidden>Chọn loại sản phẩm</option>
+                        <option value="aothun">Áo thun</option>
+                        <option value="quan">Quần</option>
+                        <option value="giay">Giày</option>
+                        <option value="phukien">Phụ kiện</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="hinhanh">Hình ảnh:</label>  
+                    <input type="file" id="hinhanh" name="hinhanh" required>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <label for="addColors">Nhập màu sắc (mỗi màu trên một dòng, cách nhau bằng dấu phẩy):</label>
+                        <input type="text" id="addColors" name="addColors" placeholder="Ví dụ: đỏ,xanh,vàng">
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <label for="addSizes">Nhập kích cỡ (mỗi kích cỡ trên một dòng, cách nhau bằng dấu phẩy):</label>
+                        <input type="text" id="addSizes" name="addSizes" placeholder="Ví dụ: S,M,L">
+                    </fieldset>
+                </div>
+
+                <button type="button" onclick="generateVariants()">Nhập số lượng</button>
+                <div id="variantsTableContainer"></div>
+            </fieldset>
+        
+            <button type="submit">Thêm</button>
+            </form>
+        </main>      
+    </body>
+    <script>
+        function generateVariants() {
+            const colorsInput = document.getElementById('addColors').value.split(',').map(color => color.trim());
+            const sizesInput = document.getElementById('addSizes').value.split(',').map(size => size.trim());
+            const variantsTableContainer = document.getElementById('variantsTableContainer');
+            variantsTableContainer.innerHTML = '';
+
+            const table = document.createElement('table');
+            const thead = document.createElement('thead');
+            const tbody = document.createElement('tbody');
+
+            const colorsCount = colorsInput.length;
+            const sizesCount = sizesInput.length;
+
+            // Tạo hàng tiêu đề
+            const headerRow = document.createElement('tr');
+            const headerCells = ['Màu sắc', 'Kích cỡ', 'Số lượng', 'Ảnh'].map(headerText => {
+                const th = document.createElement('th');
+                th.textContent = headerText;
+                return th;
+            });
+            headerCells.forEach(cell => headerRow.appendChild(cell));
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+
+            // Tạo các dòng dữ liệu
+            for (let i = 0; i < colorsCount; i++) {
+                for (let j = 0; j < sizesCount; j++) {
+                    const row = document.createElement('tr');
+                    const cells = [
+                        document.createElement('td'),
+                        document.createElement('td'),
+                        document.createElement('td'),
+                        document.createElement('td')
+                    ];
+
+                    cells[0].textContent = colorsInput[i];
+                    cells[1].textContent = sizesInput[j];
+                    cells[2].innerHTML = '<input type="number" name="quantities[]" min="0" value="0">';
+                    cells[3].innerHTML = '<input type="file" name="images[]" accept="image/*">';
+
+                    cells.forEach(cell => row.appendChild(cell));
+                    tbody.appendChild(row);
+                }
+            }
+
+            table.appendChild(tbody);
+            variantsTableContainer.appendChild(table);
+        }
+
+        document.getElementById('productForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const data = {
+                productName: formData.get('productName'),
+                productDescription: formData.get('productDescription'),
+                colors: formData.get('colors').split(',').map(color => color.trim()),
+                sizes: formData.get('sizes').split(',').map(size => size.trim()),
+                quantities: [],
+                images: []
+            };
+
+            formData.getAll('quantities[]').forEach(quantity => data.quantities.push(quantity));
+            formData.getAll('images[]').forEach(image => data.images.push(image));
+
+            console.log(data);
+
+            // Gửi dữ liệu tới server tại đây...
+        });
+    </script>
+
+</html>
