@@ -1811,7 +1811,7 @@ background-color: #0056b3; /* Darker blue color on hover */
 
 /*CSS ADMIN-ADDSTAFF */
 
-#admin-addstaff {
+.admin-add-update-staff {
   width: 90%;
   margin: 0 auto;
   padding: 20px;
@@ -1819,31 +1819,31 @@ background-color: #0056b3; /* Darker blue color on hover */
   margin-top: 60px;
   margin-bottom: 60px;
 }
-#admin-addstaff h2{
+.admin-add-update-staff h2{
   text-align: left;
   margin-bottom: 20px;
 }
-#admin-addstaff h1 {
+.admin-add-update-staff h1 {
   text-align: center;
   margin-bottom: 20px;
 }
-#admin-addstaff .form-details {
+.admin-add-update-staff .form-details {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
   flex-direction: column;
 }
-#admin-addstaff .form-group {
+.admin-add-update-staff .form-group {
   margin-bottom: 15px;
 }
 
-#admin-addstaff label {
+.admin-add-update-staff label {
   display: block;
   margin-bottom: 5px;
 }
 
-#admin-addstaff input,
-#admin-addstaff textarea {
+.admin-add-update-staff input,
+.admin-add-update-staff textarea {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -1851,10 +1851,10 @@ background-color: #0056b3; /* Darker blue color on hover */
 
 
 
-#admin-addstaff button:hover {
+.admin-add-update-staff button:hover {
   background-color: #0056b3;
 }
-#admin-addstaff .form-group select {
+.admin-add-update-staff .form-group select {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -1862,15 +1862,15 @@ background-color: #0056b3; /* Darker blue color on hover */
   background-color: white; /* Background color for the dropdown */
   cursor: pointer; /* Indicate clickable element */
 }
-#admin-addstaff .form-group select:focus {
+.admin-add-update-staff .form-group select:focus {
   outline: none; /* Remove focus outline */
   border: 1px solid #4CAF50; /* Add a blue border on focus */
 }
 
-#admin-addstaff .form-group select option {
+.admin-add-update-staff .form-group select option {
   padding: 5px 10px; /* Adjust option padding */
 }
-#admin-addstaff label {
+.admin-add-update-staff label {
   width: max-content;
 }
 
