@@ -72,17 +72,6 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Quản lý nhân viên
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-dark">
-                                        <li><a class="dropdown-item" href="#">Thêm sản phẩm</a></li>
-                                        <li><a class="dropdown-item" href="#">Xem danh sách sản phẩm</a></li>
-                                        <li><a class="dropdown-item" href="#">Sửa thông tin sản phẩm</a></li>
-                                        <li><a class="dropdown-item" href="#">Xóa sản phẩm</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
                                     <a class="nav-link" href="#" aria-expanded="false">
                                         Danh sách nhân viên
                                     </a>
@@ -104,13 +93,13 @@
             </nav>
         </header>
         <main class="px-3">
-            <h3 class="my-3">Danh sách nhân viên</h3>
+            <h3 class="my-3">Danh sách khách hàng</h3>
             <div class="row my-3">
                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
                     <a href="#" class="btn btn-outline-primary">Đang hoạt động</a>
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                    <a href="#" class="btn btn-outline-primary">    Đã xóa    </a>
+                    <a href="#" class="btn btn-outline-primary"> Đã bị chặn   </a>
                 </div>
             </div>
             <div class="row">
@@ -125,7 +114,7 @@
                 <table class="table table-striped container-fluid mt-3">
                     <thead>
                       <tr>
-                        <th scope="col">Mã nhân viên</th>
+                        <th scope="col">Mã khách hàng</th>
                         <th scope="col">Tên nhân viên</th>
                         <th scope="col">Email</th>
                         <th scope="col">Giới tính</th>
@@ -136,6 +125,7 @@
                     </tr>
                     </thead>
                     <tbody>
+                        <!-- foreach -->
                         <tr>
                             <th scope="row">123456789</th>
                             <td>Nguyễn Văn A</td>
@@ -147,50 +137,19 @@
                             <td>
                                 <a href="#" class="btn btn-warning mx-1 my-1">Chỉnh sửa</a>
     
-                                <button type="button" class="btn btn-danger mx-1 my-1" data-bs-toggle="dropdown" aria-expanded="false">Xóa</button>
+                                <button type="button" class="btn btn-danger mx-1 my-1" data-bs-toggle="dropdown" aria-expanded="false">Chặn</button>
                                 <div class="dropdown-menu p-2 bg-light">
                                     <div class="col justify-content-center d-flex flex-column">
-                                        <h3>Bạn xác nhận xóa nhân viên này chứ?</h3>
-                                        <a href="#" class="btn btn-danger mt-5 mx-auto">Xóa</a>
+                                        <h3>Bạn xác nhận chặn khách hàng này chứ?</h3>
+                                        <a href="#" class="btn btn-danger mt-5 mx-auto">Chặn</a>
                                     </div>
                                 </div>
     
-                                <button type="button" class="btn btn-success mx-1 my-1" data-bs-toggle="dropdown" aria-expanded="false">Khôi phục</button>
+                                <button type="button" class="btn btn-success mx-1 my-1" data-bs-toggle="dropdown" aria-expanded="false">Mở chặn</button>
                                 <div class="dropdown-menu p-2 bg-light">
                                     <div class="col justify-content-center d-flex flex-column">
-                                        <h3>Bạn xác nhận xóa nhân viên này chứ?</h3>
-                                        <a href="#" class="btn btn-success mt-5 mx-auto">Khôi phục</a>
-                                    </div>
-                                </div>
-                                
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <th scope="row">123456789</th>
-                            <td>Nguyễn Văn A</td>
-                            <td>nguyenvana@gmail.com</td>
-                            <td>Nam</td>
-                            <td>14/06/2003</td>
-                            <td>0369852145</td>
-                            <td>Đà nẵng</td>
-                            <td>
-                                <a href="#" class="btn btn-warning mx-1 my-1">Chỉnh sửa</a>
-    
-                                <button type="button" class="btn btn-danger mx-1 my-1" data-bs-toggle="dropdown" aria-expanded="false">Xóa</button>
-                                <div class="dropdown-menu p-2 bg-light">
-                                    <div class="col justify-content-center d-flex flex-column">
-                                        <h3>Bạn xác nhận xóa nhân viên này chứ?</h3>
-                                        <a href="#" class="btn btn-danger mt-5 mx-auto">Xóa</a>
-                                    </div>
-                                </div>
-    
-                                <button type="button" class="btn btn-success mx-1 my-1" data-bs-toggle="dropdown" aria-expanded="false">Khôi phục</button>
-                                <div class="dropdown-menu p-2 bg-light">
-                                    <div class="col justify-content-center d-flex flex-column">
-                                        <h3>Bạn xác nhận khôi phục nhân viên này chứ?</h3>
-                                        <a href="#" class="btn btn-success mt-5 mx-auto">Khôi phục</a>
+                                        <h3>Bạn xác nhận mở chặn khách hàng này chứ?</h3>
+                                        <a href="#" class="btn btn-success mt-5 mx-auto">Mở chặn</a>
                                     </div>
                                 </div>
                                 

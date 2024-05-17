@@ -1812,7 +1812,7 @@ background-color: #0056b3; /* Darker blue color on hover */
 /*CSS ADMIN-ADDSTAFF */
 
 #admin-addstaff {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -1849,13 +1849,7 @@ background-color: #0056b3; /* Darker blue color on hover */
   border: 1px solid #ccc;
 }
 
-#admin-addstaff button {
-  padding: 8px 15px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
+
 
 #admin-addstaff button:hover {
   background-color: #0056b3;
@@ -1875,6 +1869,9 @@ background-color: #0056b3; /* Darker blue color on hover */
 
 #admin-addstaff .form-group select option {
   padding: 5px 10px; /* Adjust option padding */
+}
+#admin-addstaff label {
+  width: max-content;
 }
 
 
@@ -2327,153 +2324,6 @@ background-color: #0056b3; /* Darker blue color on hover */
 }
 
 
-
-
-
-
-
-/* danh sach khach hang css */
-#admin-listcustomer body {
-  font-family: sans-serif;
-}
-
-#admin-listcustomer .container {
-  width: 80%;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff; /* Màu nền cho khung bao trùm */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
-}
-
-/* style.css */
-
-/* ... (CSS trước đây) */
-
-#admin-listcustomer .customer-tabs {
-  margin-bottom: 20px;
-}
-
-#admin-listcustomer .nav-tabs {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#admin-listcustomer .nav-tabs li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-#admin-listcustomer .nav-tabs a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #000;
-}
-
-#admin-listcustomer .nav-tabs .active a {
-  background-color: #eee;
-}
-
-#admin-listcustomer .tab-content {
-  padding: 20px;
-  border: 1px solid #ccc;
-}
-
-#admin-listcustomer .customer-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-#admin-listcustomer .customer-table th,
-#admin-listcustomer .customer-table td {
-  padding: 8px;
-  border: 1px solid #ccc;
-  text-align: left;
-}
-
-#admin-listcustomer .customer-table th {
-  background-color: #eee;
-}
-
-#admin-listcustomer .block-btn,
-#admin-listcustomer .unblock-btn,
-#admin-listcustomer .history-btn {
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-#admin-listcustomer .block-btn:hover,
-#admin-listcustomer .unblock-btn:hover,
-#admin-listcustomer .history-btn:hover {
-  background-color: #0056b3;
-}
-
-#admin-listcustomer .customer-details {
-  padding: 20px;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-}
-
-#admin-listcustomer .customer-details h2 {
-  margin-bottom: 10px;
-}
-
-#admin-listcustomer .customer-details p {
-  margin-bottom: 5px;
-}
-
-#admin-listcustomer .dropdown-item {
-  background-color: #f9f9f9; /* Màu nền mặc định */
-  border: 3px solid #ccc;
-  border-radius: 10px;
-  color: #333; /* Màu chữ mặc định */
-  padding: 10px 10px; /* Thêm padding cho item */
-  margin: 5px 0; /* Thêm margin cho item */
-  text-align: center; /* Canh chỉnh nội dung ở giữa */
-}
-
-#admin-listcustomer .dropdown-item:hover {
-  background-color: #e9e9e9; /* Màu nền khi hover */
-  color: #007bff; /* Màu chữ khi hover */
-}
-      
-/* 
-.blocked-customer-details.active {
-  display: block; 
-}
-
-.blocked-customer-details .close-btn {
-  float: right;
-  cursor: pointer;
-}
-
-.blocked-customer-details h2 {
-  margin-top: 0;
-}
-
-.blocked-customer-details p {
-  margin-bottom: 10px;
-}
-
-.blocked-customer-details table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.blocked-customer-details th, .blocked-customer-details td {
-  padding: 8px;
-  border: 1px solid #ccc;
-  text-align: left;
-}
-
-.blocked-customer-details th {
-  background-color: #f2f2f2;
-} */
 
 
 
