@@ -10,72 +10,22 @@
     <title>Document</title>
 </head>
 <body>
-    <header class = "header">
-        <section class = "header__logo">
-            <div class="header__logo-ads" id="ads">
-                <span class="ad-text">Miễn phí vận chuyển cho đơn hàng từ 800.000đ</span>
-                <span class="ad-text">Giao hàng nội thành trong ngày</span>
-                <span class="ad-text">Đổi trả trong 7 ngày</span>
-            </div>
-            <div class="header__logo-img">
-                <a href="#"><img id="logo" src="./image/ZERAFASHION.png" alt="Logo"></a>
-            </div class>
-    
-            <div class="header__logo-mininav">
-                <!-- <div class="header__logo-mininavitem"><input type="text" id="searchInput" name="searchInput" placeholder="Nhập từ khóa tìm kiếm..."></div> -->
-                <div class="header__logo-mininavitem">
-                    <button class="header__logo--icon" id= "searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-                <div class="header__logo-mininavitem" id = "dropdown-user">
-                    <span class="header__logo--icon"><i class="fa-solid fa-circle-user"></i></span>
-                    <div class="dropdown-user-content">
-                        <a href="#">Thông tin cá nhân</a>
-                        <a href="#">Lịch sử mua hàng</a>
-                        <a href="#">Đăng xuất</a>
-                    </div>
-                </div>
-                <div class="header__logo-mininavitem">
-                    <a href="#" class="header__logo--icon">
-                        <i class="fa-solid fa-bag-shopping"></i>
-                        <span class="count_item_pr">99</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- search bar -->
-        <div id="searchBar" class="search-bar">
-            <input type="text" placeholder="Nhập từ khóa">
-            <button class="search-bar__button" id= "searchButton-search-bar"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button class="search-bar__button" id = "exit-searchBar"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-        <!-- end header__logo-->
-        <nav class="header__navbar">
-            <ul class="header__navbar-list">
-                <h3>
-                  <li class="header__navbar-item"> <a href="#" id="a1">SẢN PHẨM</a></li>
-                  <li class="header__navbar-item"> <a href="#" id="a1">ÁO NAM</a></li>
-                  <li class="header__navbar-item"> <a href="#" id="a1">QUẦN NAM</a></li>
-                  <li class="header__navbar-item"> <a href="#" id="a1">GIÀY NAM</a></li>
-                  <li class="header__navbar-item"> <a href="#" id="a1">ĐỒ THỂ THAO</a></li>
-                  <li class="header__navbar-item"> <a href="#" id="a1">VỀ CHÚNG TÔI</a></li>
-                </h3>
-            </ul>
-        </nav>
-        <!-- end header__navbar -->
-    </header>
+
     <main id="admin-liststaff">
        
             
         
             <div class="container">
-                <h1>Trang Danh Sách Khách Hàng</h1>
-              <div class="search-filter">
-                <input type="text" placeholder="Tìm kiếm theo tên, email, số điện thoại hoặc nhóm">
-                <button class="btn-search">Tìm kiếm</button>
+                <h1>Danh sách nhân viên</h1>
+              <div class="search-filter p-3 ">
+                <input type="text" class="form-control mx-3" id="btn-update-category" placeholder="Tìm kiếm theo tên hoặc email...">
+                <!-- <input type="text" placeholder="Tìm kiếm theo tên hoặc email..."> -->
+                <a href="#" class="btn btn-success mx-3">Tìm kiếm</a>
+                <!-- <button class="btn-search">Tìm kiếm</button> -->
               </div>
-        
+
               <button class="btn-add">Thêm nhân viên</button>
-        
+
               <h2>Nhân viên đang hoạt động</h2>
               <table class="table">
                 <thead>
