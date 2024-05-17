@@ -2326,4 +2326,12 @@ background-color: #0056b3; /* Darker blue color on hover */
 
 
 
+/* CSS ADMIN-UPDATE-PRODUCT */
+.admin-update-product .form-group label {
+  display: inline;
+  padding: 15px;
+
+}
+
+
 
