@@ -2295,3 +2295,24 @@ textarea {
   padding: 3px;
 }
 /* end order history css */
+
+
+
+
+/* css receiving_order tiếp nhận đơn */
+#receiving_order .order_detail p{
+  font-size:larger;
+  
+}
+#receiving_order .order-product-img{
+  height: 200px;
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+#receiving_order .order_detail{
+ border:1px solid #000;
+ border-radius: 10px;
+ background-color: #e7e2e2;
+}
+
