@@ -1,0 +1,100 @@
+/* Cài đặt chung cho phần đánh giá sản phẩm */
+.product-review {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Cài đặt cho từng phần đánh giá */
+.review-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.review-item.featured {
+  border: none;
+}
+
+/* Cài đặt cho thông tin đánh giá */
+.review-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.rating {
+  font-size: 24px;
+  color: #f0ad4e;
+  margin-right: 5px;
+}
+
+.stars i {
+  font-size: 18px;
+  margin-right: 2px;
+}
+
+.reviewer {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Cài đặt cho nội dung đánh giá */
+.review-content {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+/* Cài đặt cho phần chi tiết đánh giá */
+.review-details {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.review-details h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.review-details ul {
+  padding-left: 20px;
+  list-style: disc;
+  margin-bottom: 0;
+}
+
+.review-details ul li {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+/* Cài đặt cho phần đánh giá áo thun */
+.review-item-ao-thun {
+  background-color: #e6f2ff; 
+}
+
+.review-item-ao-thun .review-info {
+  align-items: flex-start; 
+}
+
+.review-item-ao-thun .review-content {
+  text-align: justify; 
+}
+
+.review-item-ao-polo {
+  background-color: #f7f1e6;
+}
+
+.review-item-ao-polo .review-info {
+  align-items: flex-end; 
+}
+
+.review-item-ao-polo .review-content {
+  text-align: right;
+}
