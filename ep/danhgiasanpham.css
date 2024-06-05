@@ -1,100 +1,141 @@
 /* Cài đặt chung cho phần đánh giá sản phẩm */
 #feedback .product-review {
   margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 80%;
+  display: flex;
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+  max-width: 100%; /* Giới hạn độ rộng */
   margin: 0 auto;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px; /* Bo tròn góc */
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Cài đặt cho từng phần đánh giá */
-#feedback .review-item {
-  border: 1px solid #ddd;
-  padding: 20px;
+/* Cài đặt cho tiêu đề */
+#feedback .product-review h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
   margin-bottom: 20px;
 }
 
-#feedback .review-item.featured {
-  border: none;
+/* Cài đặt cho phần đánh giá trung bình */
+#feedback .average-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#feedback .average-rating .rating-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+  margin-right: 10px;
+}
+
+#feedback .average-rating .stars i {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+/* Cài đặt cho phần danh sách đánh giá chi tiết */
+#feedback .review-items {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các phần tử tự động xuống hàng khi cần thiết */
+}
+
+#feedback .review-item {
+  flex: 1 0 300px; /* Chiều rộng tối thiểu 300px */
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Cài đặt cho thông tin đánh giá */
 #feedback .review-info {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 #feedback .rating {
-  font-size: 24px;
-  color: #f0ad4e;
+  font-size: 18px;
+  color: #000000;
   margin-right: 5px;
 }
 
 #feedback .stars i {
-  font-size: 18px;
+  font-size: 14px;
   margin-right: 2px;
+  color: #f0ad4e; /* Màu vàng */
+
 }
 
 #feedback .reviewer {
   font-weight: bold;
-  color: #333;
+  color: #000000;
 }
 
 /* Cài đặt cho nội dung đánh giá */
-#feedback .review-content {
-  line-height: 1.6;
-  margin-bottom: 15px;
-  color: #666;
+/* Cài đặt cho bộ lọc đánh giá */
+#feedback .review-filter {
+  display: flex;
+  margin-bottom: 20px;
 }
 
-/* Cài đặt cho phần chi tiết đánh giá */
-#feedback .review-details {
-  border-top: 1px solid #ddd;
-  padding-top: 15px;
+#feedback .review-filter .filter-item {
+  margin-right: 10px;
 }
 
-#feedback .review-details h3 {
-  margin-bottom: 10px;
+#feedback .review-filter .filter-item a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  text-decoration: none;
   color: #333;
 }
 
-#feedback .review-details ul {
-  padding-left: 20px;
-  list-style: disc;
-  margin-bottom: 0;
+#feedback .review-filter .filter-item a.active {
+  background-color: #f0ad4e;
+  color: #fff;
 }
 
-#feedback .review-details ul li {
-  margin-bottom: 5px;
-  color: #666;
+/* Cài đặt cho hiển thị số lượng đánh giá theo số sao */
+#feedback .review-items .review-item .rating-count {
+  font-size: 12px;
+  color: #999;
+  margin-left: 10px;
+}
+#feedback .review-item {
+  /* Các thuộc tính khác giữ nguyên */
+  background-color: #f5f5f5; /* Màu nền cho tất cả phần đánh giá */
 }
 
-/* Cài đặt cho phần đánh giá áo thun */
+#feedback .review-item.review-item-may {
+  background-color: #e6f2ff; /* Màu nền cho phần đánh giá áo */
+}
+
+#feedback .review-item.review-item-quan {
+  background-color: #f7f1e6; /* Màu nền cho phần đánh giá quần */
+}
+#feedback .review-items .review-item:nth-child(odd) {
+  background-color: #f5f5f5; /* Màu nền cho phần đánh giá lẻ (1, 3, 5,...) */
+}
+
+#feedback .review-items .review-item:nth-child(even) {
+  background-color: #fbfbfb; /* Màu nền cho phần đánh giá chẵn (2, 4, 6,...) */
+}
+
+#feedback .review-items .review-item.has-rating-5 {
+  background-color: #050505; /* Màu nền cho phần đánh giá 5 sao */
+}
 #feedback .review-item-ao-thun {
   background-color: #e6f2ff; 
 }
-
-#feedback .review-item-ao-thun .review-info {
-  align-items: flex-start; 
-}
-
-#feedback .review-item-ao-thun .review-content {
-  text-align: justify; 
-}
-
 #feedback .review-item-ao-polo {
   background-color: #f7f1e6;
-}
-
-#feedback .review-item-ao-polo .review-info {
-  align-items: flex-end; 
-}
-
-#feedback .review-item-ao-polo .review-content {
-  text-align: right;
 }
