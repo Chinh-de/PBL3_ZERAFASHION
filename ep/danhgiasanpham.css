@@ -1,5 +1,5 @@
 /* Cài đặt chung cho phần đánh giá sản phẩm */
-.product-review {
+#feedback .product-review {
   margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr;
@@ -12,89 +12,89 @@
 }
 
 /* Cài đặt cho từng phần đánh giá */
-.review-item {
+#feedback .review-item {
   border: 1px solid #ddd;
   padding: 20px;
   margin-bottom: 20px;
 }
 
-.review-item.featured {
+#feedback .review-item.featured {
   border: none;
 }
 
 /* Cài đặt cho thông tin đánh giá */
-.review-info {
+#feedback .review-info {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.rating {
+#feedback .rating {
   font-size: 24px;
   color: #f0ad4e;
   margin-right: 5px;
 }
 
-.stars i {
+#feedback .stars i {
   font-size: 18px;
   margin-right: 2px;
 }
 
-.reviewer {
+#feedback .reviewer {
   font-weight: bold;
   color: #333;
 }
 
 /* Cài đặt cho nội dung đánh giá */
-.review-content {
+#feedback .review-content {
   line-height: 1.6;
   margin-bottom: 15px;
   color: #666;
 }
 
 /* Cài đặt cho phần chi tiết đánh giá */
-.review-details {
+#feedback .review-details {
   border-top: 1px solid #ddd;
   padding-top: 15px;
 }
 
-.review-details h3 {
+#feedback .review-details h3 {
   margin-bottom: 10px;
   color: #333;
 }
 
-.review-details ul {
+#feedback .review-details ul {
   padding-left: 20px;
   list-style: disc;
   margin-bottom: 0;
 }
 
-.review-details ul li {
+#feedback .review-details ul li {
   margin-bottom: 5px;
   color: #666;
 }
 
 /* Cài đặt cho phần đánh giá áo thun */
-.review-item-ao-thun {
+#feedback .review-item-ao-thun {
   background-color: #e6f2ff; 
 }
 
-.review-item-ao-thun .review-info {
+#feedback .review-item-ao-thun .review-info {
   align-items: flex-start; 
 }
 
-.review-item-ao-thun .review-content {
+#feedback .review-item-ao-thun .review-content {
   text-align: justify; 
 }
 
-.review-item-ao-polo {
+#feedback .review-item-ao-polo {
   background-color: #f7f1e6;
 }
 
-.review-item-ao-polo .review-info {
+#feedback .review-item-ao-polo .review-info {
   align-items: flex-end; 
 }
 
-.review-item-ao-polo .review-content {
+#feedback .review-item-ao-polo .review-content {
   text-align: right;
 }
