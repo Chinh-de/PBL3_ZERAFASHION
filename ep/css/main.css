@@ -2388,7 +2388,7 @@ background-color: #0056b3; /* Darker blue color on hover */
 }
 
 #feedback .review-item {
-  flex: 1 0 300px; /* Chiều rộng tối thiểu 300px */
+  flex: 1 0 100px; /* Chiều rộng tối thiểu 300px */
   margin-bottom: 20px;
   padding: 20px;
   border: 1px solid #ddd;
