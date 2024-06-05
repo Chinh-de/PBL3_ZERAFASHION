@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="danhgiasanpham-nguoidung.css">
 </head>
 <body>
+<div id="feedbackuser">
     <div class="container">
         <h2>Đánh giá sản phẩm</h2>
     
@@ -53,5 +54,6 @@
             </ul>
         </div>
       </div>
+</div>
 </body>
 </html>
