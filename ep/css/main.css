@@ -2388,7 +2388,7 @@ background-color: #0056b3; /* Darker blue color on hover */
 }
 
 #feedback .review-item {
-  flex: 1 0 300px; /* Chiều rộng tối thiểu 300px */
+  flex: 1 0 100px; /* Chiều rộng tối thiểu 300px */
   margin-bottom: 20px;
   padding: 20px;
   border: 1px solid #ddd;
@@ -2480,5 +2480,19 @@ background-color: #0056b3; /* Darker blue color on hover */
 #feedback .review-item-ao-polo {
   background-color: #f7f1e6;
 }
+#feedback .add-review-button {
+  display: block; /* Make it a block element */
+  margin: 20px auto; /* Add spacing and center the button */
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add hover effect transition */
+}
 
+#feedback .add-review-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
 
