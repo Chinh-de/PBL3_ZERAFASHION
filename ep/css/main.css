@@ -953,6 +953,12 @@ input[type="date"] {
   font-size: 18px;
   color: #333;
   margin-top: 10px;
+  color: red;
+}
+
+#main .product a
+{
+  text-decoration: none;
 }
 
 /* Support Section (Optional) */
