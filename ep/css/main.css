@@ -1343,13 +1343,13 @@ input[type="date"] {
 
 #inforproduct .danh-muc-san-pham {
   display: flex;
+  float: left;
   flex-wrap: wrap; /* Cho phép các sản phẩm tự động chuyển sang dòng mới */
-  justify-content: space-between; /* Sắp xếp sản phẩm cách đều nhau */
   align-items: flex-start; /* Căn chỉnh sản phẩm theo cạnh trên */
 }
 
 #inforproduct .san-pham {
-  width: calc(25% - 20px); /* Chiều rộng tính toán cho mỗi sản phẩm */
+  width: 181px; /* Chiều rộng tính toán cho mỗi sản phẩm */
   margin: 10px; /* Khoảng cách giữa các sản phẩm */
   text-align: center; /* Căn chỉnh nội dung sản phẩm ở giữa */
   border: 1px solid #ccc; /* Thêm đường viền cho sản phẩm */
