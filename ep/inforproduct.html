@@ -122,13 +122,17 @@
                             <option value="XXL">XXL</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="price-range">
                         <h3>Khoảng giá</h3>
-                        <label for="priceFilter">Giá bắt đầu:</label>
-                        <input type="text" id="priceFilterStart" name="priceFilter" required>
-                        <label for="priceFilter">Giá bắt đầu:</label>
-                        <input type="text" id="priceFilterEnd" name="pricefilter" required>
-                    </div>
+                        <div class="price-inputs">
+                          <label for="priceFilterStart">Giá bắt đầu:</label>
+                          <input type="text" id="priceFilterStart" name="priceFilter" required>
+                        </div>
+                        <div class="price-inputs">
+                          <label for="priceFilterEnd">Giá kết thúc:</label>
+                          <input type="text" id="priceFilterEnd" name="priceFilter" required>
+                        </div>
+                      </div>
                 </ul>
                 <button type="submit">Tìm kiếm</button>
             </aside>
