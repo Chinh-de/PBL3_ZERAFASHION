@@ -807,52 +807,10 @@ input[type="date"] {
   max-width: 1140px;
   margin: 0 auto;
   padding: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
- 
-}
-#main .product-list {
-  display: flex; /* Arrange products in a row */
-  flex-wrap: wrap; /* Allow products to wrap to multiple lines */
-  justify-content: space-between; /* Distribute products evenly */
 }
 
 
-
-
-/* css danh muc dong */
-.category-name {
-  cursor: pointer;
-  font-weight: bold;
-}
-.sub-category {
-  display: none;
-  list-style: none;
-  padding-left: 0;
-}
-
-.category-toggle {
-  display: none;
-}
-.category-toggle:checked + .category-name + .sub-category {
-  display: block;
-}
-
-/* inforproduct */
-
-#inforproduct {
-    padding: 20px;
-    display: flex;
-}
-
-/* #inforproduct .container {
-#main .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-/* Banner */
+/* Banner Section (Optional) */
 #main .banner {
   background-color: #eee;
   padding: 40px 0;
@@ -882,75 +840,55 @@ input[type="date"] {
   background-color: #007bff;
   color: #fff;
 }
-#main .support{
-  padding: 40px 0;
+
+/* Product Categories (Optional) */
+#main .category-name {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-/* General Styles for Products Section */
-#main .products {
-  width: 80%; /* Adjust width as needed */
+
+#main .sub-category {
+  display: none;
+  list-style: none;
+  padding-left: 0;
+}
+
+#main .category-toggle {
+  display: none;
+}
+
+#main .category-toggle:checked + .category-name + .sub-category {
+  display: block;
+}
+
+#main .productsnew{
+
+  max-width: 100%; /* Set maximum width to 80% */
+ 
+}
+#main .product{
+ margin-left: 30px;
+
+  
+
+}
+/* Product Sections */
+#main .section {
+  margin-bottom: 50px;
+  max-width: 100%; /* Set maximum width to 80% */
   margin: 0 auto; /* Center the section */
-  font-family: Arial, sans-serif; /* Choose your preferred font */
 }
 
-.product i {
-  font-size: 50px; /* Increase icon size */
-  display: block; /* Make icons block elements for centering */
-  margin: 0 auto; /* Center icons horizontally */
-  margin-bottom: 20px; /* Add spacing below icons */
-  text-align: center;
-}
-
-/* Title Container Styling */
-#main .title-container {
+#main .section.products .title-container {
   text-align: center;
   margin-bottom: 20px;
 }
 
-#main h2 {
-  color: #333; /* Adjust title color */
-  font-size: 24px; /* Adjust title size */
-}
+#main .section.products h2 {
+  color: #333;
+  font-size: 24px;
 
-/* Product List Container */
-
-/* Individual Product Styling */
-#main .product {
-  width: 250px; /* Adjust product width as needed */
-  margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  transition: box-shadow 0.3s ease; /* Smooth hover effect */
-  border-radius: 5px;
-}
-
-#main .product:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
-}
-
-/* Image Styling */
-#main .product img {
-  width: 100%; /* Make image responsive */
-  height: 200px; /* Adjust image height as needed */
-  object-fit: cover; /* Maintain aspect ratio and cover the entire area */
-}
-
-/* Product Info Container */
-#main .product-info {
-  text-align: center;
-  padding: 15px;
-}
-
-/* Product Name (h3) Styling */
-#main .product-info h3 {
-  margin-top: 10px; /* Add spacing above product name */
-  font-size: 18px; /* Adjust product name font size */
-  color: #333; /* Adjust product name color */
-}
-
-/* Price Styling */
-#main .price {
-  font-size: 18px; /* Adjust price font size */
-  color: #333; /* Adjust price color */
-  margin-top: 10px; /* Add spacing above price */
 }
 
 
@@ -2338,13 +2276,149 @@ background-color: #0056b3; /* Darker blue color on hover */
 
 
 
-   /* feedbakc */
+   /* feedback */
    /* Cài đặt chung cho phần đánh giá sản phẩm */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px; /* Rounded corners for container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Product Info Section */
+#feedbackuser .product-info {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center; /* Vertically align image and details */
+}
+
+#feedbackuser .product-info img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px; /* Rounded corners for image */
+}
+
+#feedbackuser .product-details {
+  flex: 1;
+}
+
+#feedbackuser .product-details h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2em; /* Slightly larger heading text */
+}
+
+#feedbackuser .product-details p {
+  margin-bottom: 10px;
+}
+
+#feedbackuser .price {
+  font-weight: bold;
+  color: #333; /* Darker text color for price */
+}
+
+/* Review Form Section */
+#feedbackuser .review-form {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #edf2fa; /* Lighter blue background */
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#feedbackuser .review-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#feedbackuser .review-form select{
+  width: 200px;
+  height: 40px;
+  text-align: center;
+
+}
+#feedbackuser .review-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px; /* Rounded corners for form elements */
+  margin-bottom: 15px;
+}
+
+#feedbackuser .review-form button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px; /* Rounded corners for button */
+}
+
+/* Customer Reviews Section */
+#feedbackuser .customer-reviews {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#feedbackuser .customer-reviews h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+#feedbackuser .customer-reviews ul {
+  list-style: none;
+  padding: 0;
+}
+
+#feedbackuser .customer-reviews li {
+  margin-bottom: 15px;
+}
+
+#feedbackuser .review {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#feedbackuser .reviewer-name {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333; /* Darker text color for reviewer name */
+}
+
+/* Star Rating Section (refer to previous improvements) */
+#feedbackuser .review-rating {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#feedbackuser .review-rating .star {
+  width: 24px;
+  height: 24px; /* Set height equal to width for consistent star size */
+  fill: #ccc;
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+
+#feedbackuser .review-rating .star:hover {
+  fill: #ffc107; /* Change color to a lighter orange on hover */
+}
+
+
 #feedback .product-review {
   margin-top: 30px;
   display: flex;
   flex-direction: column; /* Sắp xếp theo chiều dọc */
-  max-width: 100%; /* Giới hạn độ rộng */
+  max-width: 80%; /* Giới hạn độ rộng */
   margin: 0 auto;
   background-color: #fff;
   border-radius: 10px; /* Bo tròn góc */
@@ -2407,6 +2481,7 @@ background-color: #0056b3; /* Darker blue color on hover */
   font-size: 18px;
   color: #000000;
   margin-right: 5px;
+  
 }
 
 #feedback .stars i {
@@ -2495,4 +2570,3 @@ background-color: #0056b3; /* Darker blue color on hover */
 #feedback .add-review-button:hover {
   background-color: #0056b3; /* Darker blue on hover */
 }
-
