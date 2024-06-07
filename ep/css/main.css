@@ -1428,7 +1428,20 @@ input[type="date"] {
   border-radius: 5px;   
 }
 
+#inforproduct .price-range {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Thêm khoảng cách dưới cho phần khoảng giá */
+}
 
+#inforproduct .price-inputs {
+  display: flex;
+  margin-bottom: 10px; /* Thêm khoảng cách dưới cho mỗi khung giá */
+}
+
+#inforproduct label {
+  margin-right: 5px; /* Thêm khoảng cách giữa nhãn và khung giá */
+}
 
 
 
