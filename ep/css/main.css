@@ -923,7 +923,10 @@ input[type="date"] {
 }
 #main .image img {
   width: 1140px; /* Set the desired width */
-  height: 300px; /* Set the desired height */
+  height: 450px; /* Set the desired height */
+
+  object-fit: cover;
+  object-position: top; 
 }
 
 #main .product:hover {
@@ -1438,9 +1441,15 @@ input[type="date"] {
   display: flex;
   margin-bottom: 10px; /* Thêm khoảng cách dưới cho mỗi khung giá */
 }
+#inforproduct #priceFilterStart, #inforproduct #priceFilterEnd
+{
+  width: 45%;
+  margin-right: auto;
+}
 
 #inforproduct label {
   margin-right: 5px; /* Thêm khoảng cách giữa nhãn và khung giá */
+  margin-left: auto;
 }
 
 
