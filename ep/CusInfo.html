@@ -66,32 +66,51 @@
         </header>
         
         <!-- end header -->
-
-
-        <div id="inforcustomers">
-            <h1>Thông tin khách hàng</h1>
-    
-            <section class="thong-tin">
-                <label for="hoTen">Họ tên:</label>
-                <span id="hoTenSpan">Nguyễn Văn A</span>
-            
-                <label for="email">Email:</label>
-                <span id="emailSpan">nguyenvana@example.com</span>
-            
-                <label for="soDienThoai">Số điện thoại:</label>
-                <span id="soDienThoaiSpan">0123456789</span>
-            
-                <label for="diaChi">Địa chỉ:</label>
-                <span id="diaChiSpan">Đà Nẵng</span>
-            
-                <label for="ngaySinh">Ngày Sinh:</label>
-                <span id="ngaySinhSpan">16/03/2004</span>
-            </section>
-    
-            <button type="button" id="btnChinhSua">Chỉnh sửa</button>
-            <button type="button" id="btnQuenMatKhau">Quên mật khẩu?</button>
-    
+        <div class = "grid">
+            <div class="grid__row">
+                <div class="grid__column-2">
+                    <aside class="OrderHistory__usermenu">
+                        <p id ="OrderHistory__usermenu-name">Xin chào <br> Nguyễn Chế Định</p>
+                        <div class="OrderHistory__usermenu-account">
+                            <div class="OrderHistory__usermenu-option">
+                                <a href="#"><i class="fa-solid fa-user"></i> Tài khoản của tôi</a>
+                            </div>
+                            <div class="OrderHistory__usermenu-option">
+                                <a href=""><i class="fa-solid fa-file-invoice-dollar"></i> Đơn mua</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                        
+                <div class="grid__column-10">
+                    <div id="inforcustomers">
+                        <h2>Thông tin khách hàng</h2>
+                
+                        <section class="thong-tin">
+                            <label for="hoTen">Họ tên:</label>
+                            <span id="hoTenSpan">Nguyễn Văn A</span>
+                        
+                            <label for="email">Email:</label>
+                            <span id="emailSpan">nguyenvana@example.com</span>
+                        
+                            <label for="soDienThoai">Số điện thoại:</label>
+                            <span id="soDienThoaiSpan">0123456789</span>
+                        
+                            <label for="diaChi">Địa chỉ:</label>
+                            <span id="diaChiSpan">Đà Nẵng</span>
+                        
+                            <label for="ngaySinh">Ngày Sinh:</label>
+                            <span id="ngaySinhSpan">16/03/2004</span>
+                        </section>
+                
+                        <button type="button" id="btnChinhSua">Chỉnh sửa</button>
+                        <button type="button" id="btnQuenMatKhau">Quên mật khẩu?</button>
+                
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </div>
 </body>
 </html>

@@ -6,15 +6,18 @@
     <title> Invoice </title>
     <meta name="robots" content="noindex,nofollow" />
     <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
     <style type="text/css">
-    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+    
     .visibleMobile { display: none; }
     .hiddenMobile { display: block; }
-
     </style>
 </head>
 <body>
-    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="ffffff">
         <tr>
           <td height="20"></td>
         </tr>
@@ -76,7 +79,7 @@
                               <tr>
                                 <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: right;">
                                   <small>Hóa đơn số</small> {{data.test}}<br />
-                                  <small>Điền ngày</small>
+                                  <small>{{data.test2}}</small>
                                 </td>
                               </tr>
                             </tbody>
@@ -93,7 +96,7 @@
       </table>
       <!-- /Header -->
       <!-- Order Details -->
-      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#ffffff">
         <tbody>
           <tr>
             <td>
@@ -135,10 +138,10 @@
                           </tr>
                           <tr>
                             <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;" class="article">
-                              Điền tên sản phẩm 1
+                              {{data.test3}}
                             </td>
                             <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="center">
-                                Điền màu
+                              {{data.test4}}
                             </td>
                             <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="center">
                                 Điền kích cỡ
@@ -188,7 +191,7 @@
       </table>
       <!-- /Order Details -->
       <!-- Total -->
-      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#ffffff">
         <tbody>
           <tr>
             <td>
@@ -225,7 +228,7 @@
       </table>
       <!-- /Total -->
       <!-- Information -->
-      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#ffffff">
         <tbody>
           <tr>
             <td>

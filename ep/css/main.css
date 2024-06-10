@@ -11,6 +11,28 @@
   height: 40px;
 }
 
+table, td, tr, th
+{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#list-product th, #category-manage th, #list-cus th, #receiving_order th, #list-nv th
+{
+  text-align: center;
+  vertical-align: middle;
+}
+#list-product td, #category-manage td, #list-cus td, #receiving_order td, #list-nv td
+{
+  text-align: center;
+  vertical-align: middle;
+}
+#list-product img
+{
+  height: 100px;
+  width: auto;
+}
+
 
 
 
@@ -579,15 +601,12 @@ body {
   cursor: pointer;
 }
 
-#staff-addproduct button[type="submit"] {
-  background-color: #0a69e6; /* Green */
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+#staff-addproduct textarea {
+  width: 100%;
 }
+
+
+
 
 /* Error Styles (Optional) */
 .error {
@@ -597,18 +616,6 @@ body {
 }
 
 
-#staff-addproduct table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-}
-#staff-addproduct table, th, td {
-  border: 1px solid black;
-}
-#staff-addproduct th, td {
-  padding: 10px;
-  text-align: center;
-}
 
 
 
@@ -1462,13 +1469,11 @@ input[type="date"] {
 /*CSS INFORCUSTOMERS */
 
 #inforcustomers{
-  width: 80%;
   margin: 0 auto;
-  margin-top: 60px;
   margin-bottom: 60px;
 }
 /* Kiểu cho tiêu đề */
-#inforcustomers h1 {
+#inforcustomers h2 {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -2458,6 +2463,11 @@ background-color: #0056b3; /* Darker blue color on hover */
   margin: 0px 0px 10px 0px;
   padding: 0px;
 }
+.OrderHistory-orders-products-img
+{
+  object-fit: cover;
+  object-position: top; 
+}
 .OrderHistory-orders-itemID{
   display: flex;
   padding: 0px 20px;
@@ -2518,9 +2528,27 @@ background-color: #0056b3; /* Darker blue color on hover */
   object-position: center;
 }
 #receiving_order .order_detail{
- border:1px solid #000;
- border-radius: 10px;
- background-color: #e7e2e2;
+  width: 1000px; 
+  max-width: 80%;
+  max-height: 600px; 
+  overflow-y: scroll;
+  padding: 20px !important;
+  padding-top: 50px !important;
+  border:3px solid #000;
+  border-radius: 10px;
+  background-color: #e7e2e2;
+  background-image: url(https://th.bing.com/th/id/R.227f3ad812b33abb44a2731e0f4192dd?rik=JKpl3y0%2feCtoXw&pid=ImgRaw&r=0&sres=1&sresct=1);
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -43%) !important;
+}
+#receiving_order .card-item
+{
+  background-color:  rgba(255, 255, 255, 0.1); 
+}
+
+.price{
+  color: red;
 }
 
 

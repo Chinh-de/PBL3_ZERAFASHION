@@ -103,8 +103,14 @@
                 </div>
             </nav>
         </header>
-        <main class="px-3">
-            <h3 class="my-3">Danh sách nhân viên</h3>
+        <main class="container">
+            <div class="row mt-3 mb-5">
+                <h3 class="col-8">Danh sách nhân viên</h3>
+                <div class="col-4 d-flex align-items-center justify-content-end">
+                    <a href="#" class="btn btn-info">Thêm nhân viên</a>
+                </div>
+                
+            </div>
             <div class="row my-3">
                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
@@ -121,9 +127,9 @@
                     <a href="#" class="btn btn-primary">Tìm</a>
                 </div>
             </div>
-            <div class="table-responsive">
+            <div class="table-responsive" id = "list-nv">
                 <table class="table table-striped container-fluid mt-3">
-                    <thead>
+                    <thead class="table-primary">
                       <tr>
                         <th scope="col">Mã nhân viên</th>
                         <th scope="col">Tên nhân viên</th>
@@ -132,7 +138,8 @@
                         <th scope="col">Ngày sinh</th>
                         <th scope="col">Số điện thoại</th>
                         <th scope="col">Địa chỉ</th>
-                        <th scope="col">Thao tác</th>
+                        <th scope="col">Chỉnh sửa</th>
+                        <th scope="col">Xóa/Khôi phục</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -145,9 +152,11 @@
                             <td>0369852145</td>
                             <td>Đà nẵng</td>
                             <td>
-                                <a href="#" class="btn btn-warning mx-1 my-1">Chỉnh sửa</a>
-    
-                                <button type="button" class="btn btn-danger mx-1 my-1" data-bs-toggle="dropdown" aria-expanded="false">Xóa</button>
+                                <a href="#" class="btn btn-dark">Chỉnh sửa</a>
+                            </td>
+                            <td>
+                                
+                                <button type="button" class="btn btn-danger" data-bs-toggle="dropdown" aria-expanded="false">Xóa</button>
                                 <div class="dropdown-menu p-2 bg-light">
                                     <div class="col justify-content-center d-flex flex-column">
                                         <h3>Bạn xác nhận xóa nhân viên này chứ?</h3>
@@ -155,7 +164,7 @@
                                     </div>
                                 </div>
     
-                                <button type="button" class="btn btn-success mx-1 my-1" data-bs-toggle="dropdown" aria-expanded="false">Khôi phục</button>
+                                <button type="button" class="btn btn-success" data-bs-toggle="dropdown" aria-expanded="false">Khôi phục</button>
                                 <div class="dropdown-menu p-2 bg-light">
                                     <div class="col justify-content-center d-flex flex-column">
                                         <h3>Bạn xác nhận xóa nhân viên này chứ?</h3>
@@ -165,8 +174,6 @@
                                 
                             </td>
                         </tr>
-
-
                         <tr>
                             <th scope="row">123456789</th>
                             <td>Nguyễn Văn A</td>
@@ -176,9 +183,11 @@
                             <td>0369852145</td>
                             <td>Đà nẵng</td>
                             <td>
-                                <a href="#" class="btn btn-warning mx-1 my-1">Chỉnh sửa</a>
-    
-                                <button type="button" class="btn btn-danger mx-1 my-1" data-bs-toggle="dropdown" aria-expanded="false">Xóa</button>
+                                <a href="#" class="btn btn-dark">Chỉnh sửa</a>
+                            </td>
+                            <td>
+                                
+                                <button type="button" class="btn btn-danger" data-bs-toggle="dropdown" aria-expanded="false">Xóa</button>
                                 <div class="dropdown-menu p-2 bg-light">
                                     <div class="col justify-content-center d-flex flex-column">
                                         <h3>Bạn xác nhận xóa nhân viên này chứ?</h3>
@@ -186,16 +195,17 @@
                                     </div>
                                 </div>
     
-                                <button type="button" class="btn btn-success mx-1 my-1" data-bs-toggle="dropdown" aria-expanded="false">Khôi phục</button>
+                                <button type="button" class="btn btn-success" data-bs-toggle="dropdown" aria-expanded="false">Khôi phục</button>
                                 <div class="dropdown-menu p-2 bg-light">
                                     <div class="col justify-content-center d-flex flex-column">
-                                        <h3>Bạn xác nhận khôi phục nhân viên này chứ?</h3>
+                                        <h3>Bạn xác nhận xóa nhân viên này chứ?</h3>
                                         <a href="#" class="btn btn-success mt-5 mx-auto">Khôi phục</a>
                                     </div>
                                 </div>
                                 
                             </td>
                         </tr>
+
                     </tbody>
                 </table>
             </div>
