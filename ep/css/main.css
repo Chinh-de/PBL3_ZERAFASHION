@@ -2540,8 +2540,7 @@ background-color: #0056b3; /* Darker blue color on hover */
 
    /* feedback */
    /* Cài đặt chung cho phần đánh giá sản phẩm */
-
-.container {
+#feedbackuser {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
