@@ -199,6 +199,7 @@ table, td, tr, th
 .header__navbar-item{
   display: inline-block;
   border-radius: 15px;
+  margin: 0px 10px;
 }
 .header__navbar-item a{
   padding: 20px;
@@ -1661,7 +1662,12 @@ input[type="date"] {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
+#detailproduct .detail-picture
+{
+  width: 330px;
+  height: 520px;
+  object-fit: cover;
+}
 
 #detailproduct .product-info img {
   width: 150px;
